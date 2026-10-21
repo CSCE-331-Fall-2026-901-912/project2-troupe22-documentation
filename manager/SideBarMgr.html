@@ -100,6 +100,7 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">SideBarMgr</span>
 <span class="extends-implements">extends javafx.scene.layout.VBox</span></div>
+<div class="block">Persistent left navigation for the manager workspace.</div>
 </div>
 </section>
 <section class="summary">
@@ -147,7 +148,9 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;onAddMenuItem,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;onMenuItems,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&gt;&nbsp;onReport)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Initializes manager navigation and report-selection actions.</div>
+</div>
 </div>
 </section>
 </li>
@@ -164,19 +167,29 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#selectAddMenuItem()" class="member-name-link">selectAddMenuItem</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Highlights the add-menu-item navigation item.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#selectEmployees()" class="member-name-link">selectEmployees</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Highlights the Employees navigation item.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#selectInventory()" class="member-name-link">selectInventory</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Highlights the Inventory navigation item.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#selectMenuItems()" class="member-name-link">selectMenuItems</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Highlights the seasonal menu navigation item.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#selectReport(manager.ReportsView.Report)" class="member-name-link">selectReport</a><wbr>(<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&nbsp;report)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Highlights the navigation item for the active report.</div>
+</div>
 </div>
 </div>
 </div>
@@ -221,13 +234,7 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;onAddMenuItem,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;onMenuItems,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&gt;&nbsp;onReport)</span></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>onEmployees</code> - function that runs to display employees.</dd>
-<dd><code>onInventory</code> - function that runs to display inventory.</dd>
-<dd><code>onAddMenuItem</code> - function that runs to handle adding a menu item.</dd>
-<dd><code>onMenuItems</code> - function that runs to handle fetching menu items.</dd>
-</dl>
+<div class="block">Initializes manager navigation and report-selection actions.</div>
 </div>
 </section>
 </li>
@@ -244,6 +251,7 @@ loadScripts(document, 'script');</script>
 <h3>selectEmployees</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">selectEmployees</span>()</div>
+<div class="block">Highlights the Employees navigation item.</div>
 </div>
 </section>
 </li>
@@ -252,6 +260,7 @@ loadScripts(document, 'script');</script>
 <h3>selectInventory</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">selectInventory</span>()</div>
+<div class="block">Highlights the Inventory navigation item.</div>
 </div>
 </section>
 </li>
@@ -260,6 +269,7 @@ loadScripts(document, 'script');</script>
 <h3>selectMenuItems</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">selectMenuItems</span>()</div>
+<div class="block">Highlights the seasonal menu navigation item.</div>
 </div>
 </section>
 </li>
@@ -268,6 +278,7 @@ loadScripts(document, 'script');</script>
 <h3>selectAddMenuItem</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">selectAddMenuItem</span>()</div>
+<div class="block">Highlights the add-menu-item navigation item.</div>
 </div>
 </section>
 </li>
@@ -276,10 +287,7 @@ loadScripts(document, 'script');</script>
 <h3>selectReport</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">selectReport</span><wbr><span class="parameters">(<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&nbsp;report)</span></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>report</code> - report to view in main body upon selection.</dd>
-</dl>
+<div class="block">Highlights the navigation item for the active report.</div>
 </div>
 </section>
 </li>
