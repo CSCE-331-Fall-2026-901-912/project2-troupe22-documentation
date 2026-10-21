@@ -58,6 +58,21 @@ loadScripts(document, 'script');</script>
 <li><a href="#field-summary" tabindex="0">Field Summary</a></li>
 <li><a href="#constructor-summary" tabindex="0">Constructor Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
+<li><a href="#field-detail" tabindex="0">Field Details</a>
+<ol class="toc-list">
+<li><a href="#DARK" tabindex="0">DARK</a></li>
+<li><a href="#GRAY" tabindex="0">GRAY</a></li>
+<li><a href="#ORANGE" tabindex="0">ORANGE</a></li>
+<li><a href="#TAX_RATE" tabindex="0">TAX_RATE</a></li>
+<li><a href="#items" tabindex="0">items</a></li>
+<li><a href="#itemList" tabindex="0">itemList</a></li>
+<li><a href="#employeePicker" tabindex="0">employeePicker</a></li>
+<li><a href="#subtotalValue" tabindex="0">subtotalValue</a></li>
+<li><a href="#taxValue" tabindex="0">taxValue</a></li>
+<li><a href="#totalValue" tabindex="0">totalValue</a></li>
+<li><a href="#chargeButton" tabindex="0">chargeButton</a></li>
+</ol>
+</li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
 <li><a href="#%3Cinit%3E()" tabindex="0">SideBar()</a></li>
@@ -65,7 +80,17 @@ loadScripts(document, 'script');</script>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
+<li><a href="#loadEmployees()" tabindex="0">loadEmployees()</a></li>
 <li><a href="#addItem(int,java.lang.String,java.math.BigDecimal,java.util.List,java.lang.String,java.lang.String)" tabindex="0">addItem(int, String, BigDecimal, List, String, String)</a></li>
+<li><a href="#sameToppings(java.util.List,java.util.List)" tabindex="0">sameToppings(List, List)</a></li>
+<li><a href="#totalRow(java.lang.String,javafx.scene.control.Label,boolean)" tabindex="0">totalRow(String, Label, boolean)</a></li>
+<li><a href="#money(java.math.BigDecimal)" tabindex="0">money(BigDecimal)</a></li>
+<li><a href="#subtotal()" tabindex="0">subtotal()</a></li>
+<li><a href="#refresh()" tabindex="0">refresh()</a></li>
+<li><a href="#addDetail(javafx.scene.layout.VBox,java.lang.String)" tabindex="0">addDetail(VBox, String)</a></li>
+<li><a href="#submitOrder()" tabindex="0">submitOrder()</a></li>
+<li><a href="#addOrderToDB(java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal)" tabindex="0">addOrderToDB(BigDecimal, BigDecimal, BigDecimal)</a></li>
+<li><a href="#showError(java.lang.String,java.lang.String)" tabindex="0">showError(String, String)</a></li>
 </ol>
 </li>
 </ol>
@@ -97,6 +122,12 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">SideBar</span>
 <span class="extends-implements">extends javafx.scene.layout.VBox</span></div>
+<div class="block">Sidebar component for the cashier screen managing current order items, 
+pricing calculations, employee assignment, and order submission.</div>
+<dl class="notes">
+<dt>Author:</dt>
+<dd>Riley Schall, Sanjana Anand</dd>
+</dl>
 </div>
 </section>
 <section class="summary">
@@ -110,12 +141,26 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static final class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="SideBar.OrderItem.html" class="type-name-link" title="class in cashier">SideBar.OrderItem</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private static final class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="SideBar.EmployeeChoice.html" class="type-name-link" title="class in cashier">SideBar.EmployeeChoice</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Represents a cashier employee choice for order attribution.</div>
+</div>
+<div class="col-first odd-row-color"><code>static final class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="SideBar.OrderItem.html" class="type-name-link" title="class in cashier">SideBar.OrderItem</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Items in the current order, including customized options, quantity, and toppings.</div>
+</div>
+<div class="col-first even-row-color"><code>private class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="SideBar.TipButton.html" class="type-name-link" title="class in cashier">SideBar.TipButton</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Custom button class representing a specific tip percentage option.</div>
+</div>
 <div class="col-first odd-row-color"><code>static final class&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="SideBar.Topping.html" class="type-name-link" title="class in cashier">SideBar.Topping</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Represents a topping option that can be added to an order item with a surcharge.</div>
+</div>
 </div>
 </section>
 </li>
@@ -141,6 +186,45 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.Button</code></div>
+<div class="col-second even-row-color"><code><a href="#chargeButton" class="member-name-link">chargeButton</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#DARK" class="member-name-link">DARK</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.ComboBox<wbr>&lt;<a href="SideBar.EmployeeChoice.html" title="class in cashier">SideBar.EmployeeChoice</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#employeePicker" class="member-name-link">employeePicker</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#GRAY" class="member-name-link">GRAY</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.layout.VBox</code></div>
+<div class="col-second even-row-color"><code><a href="#itemList" class="member-name-link">itemList</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#items" class="member-name-link">items</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color"><code><a href="#ORANGE" class="member-name-link">ORANGE</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final javafx.scene.control.Label</code></div>
+<div class="col-second odd-row-color"><code><a href="#subtotalValue" class="member-name-link">subtotalValue</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></code></div>
+<div class="col-second even-row-color"><code><a href="#TAX_RATE" class="member-name-link">TAX_RATE</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final javafx.scene.control.Label</code></div>
+<div class="col-second odd-row-color"><code><a href="#taxValue" class="member-name-link">taxValue</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.Label</code></div>
+<div class="col-second even-row-color"><code><a href="#totalValue" class="member-name-link">totalValue</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-javafx.scene.layout.Region">Fields inherited from class&nbsp;javafx.scene.layout.Region</h3>
 <code>USE_COMPUTED_SIZE, USE_PREF_SIZE</code></div>
@@ -159,7 +243,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">SideBar</a>()</code></div>
 <div class="col-last even-row-color">
-<div class="block">Initializes the order sidebar, employee selector, and checkout controls.</div>
+<div class="block">Initializes the SideBar component and adds the GUI elements.</div>
 </div>
 </div>
 </section>
@@ -169,21 +253,78 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addItem(int,java.lang.String,java.math.BigDecimal,java.util.List,java.lang.String,java.lang.String)" class="member-name-link">addItem</a><wbr>(int&nbsp;id,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addDetail(javafx.scene.layout.VBox,java.lang.String)" class="member-name-link">addDetail</a><wbr>(javafx.scene.layout.VBox&nbsp;block,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Appends an order detail label to an item block container.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addItem(int,java.lang.String,java.math.BigDecimal,java.util.List,java.lang.String,java.lang.String)" class="member-name-link">addItem</a><wbr>(int&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.Topping.html" title="class in cashier">SideBar.Topping</a>&gt;&nbsp;toppings,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sweetness,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ice)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds an item to the current order list or increments its quantity if an identical item already exists.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addOrderToDB(java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal)" class="member-name-link">addOrderToDB</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;sub,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;total,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;tip)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Adds a matching item to the order or increments its quantity.</div>
+<div class="block">Prompts the user for confirmation and records the final order, totals, and tip into the database.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadEmployees()" class="member-name-link">loadEmployees</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Loads the list of employees from the database and populates the employee picker combo box.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#money(java.math.BigDecimal)" class="member-name-link">money</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Formats a BigDecimal monetary value into a standard currency string.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refresh()" class="member-name-link">refresh</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Refreshes the order display UI, updating the item list view, calculated totals, and button states.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>private static boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#sameToppings(java.util.List,java.util.List)" class="member-name-link">sameToppings</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.Topping.html" title="class in cashier">SideBar.Topping</a>&gt;&nbsp;a,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.Topping.html" title="class in cashier">SideBar.Topping</a>&gt;&nbsp;b)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Compares two lists of toppings to verify if they contain identical options.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showError(java.lang.String,java.lang.String)" class="member-name-link">showError</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;header,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;detail)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Displays an error alert dialog with a specific header and error detail message.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#submitOrder()" class="member-name-link">submitOrder</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Opens the tip selection dialog allowing the user to select preset tip percentages or enter a custom tip amount.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#subtotal()" class="member-name-link">subtotal</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Calculates the cumulative subtotal of all items in the current order.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.layout.HBox</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#totalRow(java.lang.String,javafx.scene.control.Label,boolean)" class="member-name-link">totalRow</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+ javafx.scene.control.Label&nbsp;value,
+ boolean&nbsp;emphasized)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates an HBox layout row for the subtotal, tax, and total.</div>
 </div>
 </div>
 </div>
@@ -215,6 +356,126 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="DARK">
+<h3>DARK</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">DARK</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#cashier.SideBar.DARK">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="GRAY">
+<h3>GRAY</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">GRAY</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#cashier.SideBar.GRAY">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ORANGE">
+<h3>ORANGE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">ORANGE</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#cashier.SideBar.ORANGE">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="TAX_RATE">
+<h3>TAX_RATE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name">TAX_RATE</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="items">
+<h3>items</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a>&gt;</span>&nbsp;<span class="element-name">items</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="itemList">
+<h3>itemList</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">itemList</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="employeePicker">
+<h3>employeePicker</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.ComboBox&lt;<a href="SideBar.EmployeeChoice.html" title="class in cashier">SideBar.EmployeeChoice</a>&gt;</span>&nbsp;<span class="element-name">employeePicker</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="subtotalValue">
+<h3>subtotalValue</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">subtotalValue</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="taxValue">
+<h3>taxValue</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">taxValue</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="totalValue">
+<h3>totalValue</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">totalValue</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="chargeButton">
+<h3>chargeButton</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.Button</span>&nbsp;<span class="element-name">chargeButton</span></div>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li>
 <section class="constructor-details" id="constructor-detail">
@@ -225,7 +486,7 @@ loadScripts(document, 'script');</script>
 <h3>SideBar</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">SideBar</span>()</div>
-<div class="block">Initializes the order sidebar, employee selector, and checkout controls.</div>
+<div class="block">Initializes the SideBar component and adds the GUI elements.</div>
 </div>
 </section>
 </li>
@@ -238,6 +499,15 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="loadEmployees()">
+<h3>loadEmployees</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadEmployees</span>()</div>
+<div class="block">Loads the list of employees from the database and populates the employee picker combo box.</div>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="addItem(int,java.lang.String,java.math.BigDecimal,java.util.List,java.lang.String,java.lang.String)">
 <h3>addItem</h3>
 <div class="horizontal-scroll">
@@ -247,7 +517,145 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.Topping.html" title="class in cashier">SideBar.Topping</a>&gt;&nbsp;toppings,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sweetness,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ice)</span></div>
-<div class="block">Adds a matching item to the order or increments its quantity.</div>
+<div class="block">Adds an item to the current order list or increments its quantity if an identical item already exists.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - The menu item ID</dd>
+<dd><code>name</code> - The name of the menu item</dd>
+<dd><code>price</code> - The base price of the item</dd>
+<dd><code>toppings</code> - The list of selected toppings</dd>
+<dd><code>sweetness</code> - The selected sweetness preference</dd>
+<dd><code>ice</code> - The selected ice preference</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="sameToppings(java.util.List,java.util.List)">
+<h3>sameToppings</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">sameToppings</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.Topping.html" title="class in cashier">SideBar.Topping</a>&gt;&nbsp;a,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.Topping.html" title="class in cashier">SideBar.Topping</a>&gt;&nbsp;b)</span></div>
+<div class="block">Compares two lists of toppings to verify if they contain identical options.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>a</code> - The first list of toppings</dd>
+<dd><code>b</code> - The second list of toppings</dd>
+<dt>Returns:</dt>
+<dd>True if both lists contain the exact same set of topping IDs, false otherwise</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="totalRow(java.lang.String,javafx.scene.control.Label,boolean)">
+<h3>totalRow</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.HBox</span>&nbsp;<span class="element-name">totalRow</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+ javafx.scene.control.Label&nbsp;value,
+ boolean&nbsp;emphasized)</span></div>
+<div class="block">Creates an HBox layout row for the subtotal, tax, and total.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>text</code> - The text for the row label</dd>
+<dd><code>value</code> - The label holding the monetary value</dd>
+<dd><code>emphasized</code> - True if the row should use prominent, emphasized text styling</dd>
+<dt>Returns:</dt>
+<dd>An HBox containing the formatted row elements</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="money(java.math.BigDecimal)">
+<h3>money</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">money</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;value)</span></div>
+<div class="block">Formats a BigDecimal monetary value into a standard currency string.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>value</code> - The BigDecimal value to format</dd>
+<dt>Returns:</dt>
+<dd>A formatted currency string prefixed with a dollar sign and rounded to 2 decimal places</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="subtotal()">
+<h3>subtotal</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name">subtotal</span>()</div>
+<div class="block">Calculates the cumulative subtotal of all items in the current order.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The calculated subtotal as a rounded BigDecimal</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="refresh()">
+<h3>refresh</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">refresh</span>()</div>
+<div class="block">Refreshes the order display UI, updating the item list view, calculated totals, and button states.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="addDetail(javafx.scene.layout.VBox,java.lang.String)">
+<h3>addDetail</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addDetail</span><wbr><span class="parameters">(javafx.scene.layout.VBox&nbsp;block,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</span></div>
+<div class="block">Appends an order detail label to an item block container.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>block</code> - The VBox container representing the order item block</dd>
+<dd><code>text</code> - The detail text to display</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="submitOrder()">
+<h3>submitOrder</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">submitOrder</span>()</div>
+<div class="block">Opens the tip selection dialog allowing the user to select preset tip percentages or enter a custom tip amount.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="addOrderToDB(java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal)">
+<h3>addOrderToDB</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addOrderToDB</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;sub,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;total,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;tip)</span></div>
+<div class="block">Prompts the user for confirmation and records the final order, totals, and tip into the database.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>sub</code> - The order subtotal</dd>
+<dd><code>total</code> - The total amount including tax</dd>
+<dd><code>tip</code> - The tip amount</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="showError(java.lang.String,java.lang.String)">
+<h3>showError</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showError</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;header,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;detail)</span></div>
+<div class="block">Displays an error alert dialog with a specific header and error detail message.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>header</code> - The header text summarizing the error</dd>
+<dd><code>detail</code> - The detailed error message content</dd>
+</dl>
 </div>
 </section>
 </li>

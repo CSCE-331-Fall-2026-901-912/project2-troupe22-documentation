@@ -58,9 +58,54 @@ loadScripts(document, 'script');</script>
 <li><a href="#field-summary" tabindex="0">Field Summary</a></li>
 <li><a href="#constructor-summary" tabindex="0">Constructor Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
+<li><a href="#field-detail" tabindex="0">Field Details</a>
+<ol class="toc-list">
+<li><a href="#PRODUCTS_PER_CHART_ROW" tabindex="0">PRODUCTS_PER_CHART_ROW</a></li>
+<li><a href="#CARD" tabindex="0">CARD</a></li>
+<li><a href="#PRODUCT_USAGE_SQL" tabindex="0">PRODUCT_USAGE_SQL</a></li>
+<li><a href="#report" tabindex="0">report</a></li>
+<li><a href="#table" tabindex="0">table</a></li>
+<li><a href="#status" tabindex="0">status</a></li>
+<li><a href="#exportPdf" tabindex="0">exportPdf</a></li>
+<li><a href="#exportTitle" tabindex="0">exportTitle</a></li>
+<li><a href="#exportDescription" tabindex="0">exportDescription</a></li>
+<li><a href="#reportReady" tabindex="0">reportReady</a></li>
+<li><a href="#savingPdf" tabindex="0">savingPdf</a></li>
+<li><a href="#loadVersion" tabindex="0">loadVersion</a></li>
+</ol>
+</li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
 <li><a href="#%3Cinit%3E(manager.ReportsView.Report)" tabindex="0">ReportsView(ReportsView.Report)</a></li>
+</ol>
+</li>
+<li><a href="#method-detail" tabindex="0">Method Details</a>
+<ol class="toc-list">
+<li><a href="#buildProductUsage()" tabindex="0">buildProductUsage()</a></li>
+<li><a href="#field(java.lang.String,javafx.scene.control.DatePicker)" tabindex="0">field(String, DatePicker)</a></li>
+<li><a href="#loadDefaultProductUsage(javafx.scene.control.DatePicker,javafx.scene.control.DatePicker,javafx.scene.layout.VBox)" tabindex="0">loadDefaultProductUsage(DatePicker, DatePicker, VBox)</a></li>
+<li><a href="#loadProductUsage(java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)" tabindex="0">loadProductUsage(LocalDate, LocalDate, VBox)</a></li>
+<li><a href="#showProductUsage(long,java.util.List,java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)" tabindex="0">showProductUsage(long, List, LocalDate, LocalDate, VBox)</a></li>
+<li><a href="#showProductUsageCharts(java.util.List,javafx.scene.layout.VBox)" tabindex="0">showProductUsageCharts(List, VBox)</a></li>
+<li><a href="#chartAxisUpperBound(double)" tabindex="0">chartAxisUpperBound(double)</a></li>
+<li><a href="#productUsageChart(java.util.List,double,double)" tabindex="0">productUsageChart(List, double, double)</a></li>
+<li><a href="#buildStandardReport()" tabindex="0">buildStandardReport()</a></li>
+<li><a href="#configureTable()" tabindex="0">configureTable()</a></li>
+<li><a href="#configurePdfButton()" tabindex="0">configurePdfButton()</a></li>
+<li><a href="#savePdf()" tabindex="0">savePdf()</a></li>
+<li><a href="#loadStandardReport(manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)" tabindex="0">loadStandardReport(ReportsView.ReportDefinition, LocalDate, LocalDate)</a></li>
+<li><a href="#showStandardReport(long,java.util.List,java.util.List,manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)" tabindex="0">showStandardReport(long, List, List, ReportsView.ReportDefinition, LocalDate, LocalDate)</a></li>
+<li><a href="#addProductUsageColumns()" tabindex="0">addProductUsageColumns()</a></li>
+<li><a href="#placeholder(java.lang.String)" tabindex="0">placeholder(String)</a></li>
+<li><a href="#clearTable()" tabindex="0">clearTable()</a></li>
+<li><a href="#error(java.lang.String)" tabindex="0">error(String)</a></li>
+<li><a href="#title(java.lang.String)" tabindex="0">title(String)</a></li>
+<li><a href="#subtitle(java.lang.String)" tabindex="0">subtitle(String)</a></li>
+<li><a href="#primaryButtonStyle()" tabindex="0">primaryButtonStyle()</a></li>
+<li><a href="#formatUnits(java.math.BigDecimal)" tabindex="0">formatUnits(BigDecimal)</a></li>
+<li><a href="#formatValue(java.lang.Object,java.lang.String)" tabindex="0">formatValue(Object, String)</a></li>
+<li><a href="#prettyName(java.lang.String)" tabindex="0">prettyName(String)</a></li>
+<li><a href="#definitionFor(manager.ReportsView.Report)" tabindex="0">definitionFor(ReportsView.Report)</a></li>
 </ol>
 </li>
 </ol>
@@ -106,9 +151,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static enum&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="ReportsView.Report.html" class="type-name-link" title="enum class in manager">ReportsView.Report</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private static final record&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="ReportsView.ProductUsageRow.html" class="type-name-link" title="class in manager">ReportsView.ProductUsageRow</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">One row of the product usage report.</div>
+</div>
+<div class="col-first odd-row-color"><code>static enum&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="ReportsView.Report.html" class="type-name-link" title="enum class in manager">ReportsView.Report</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private static final record&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="ReportsView.ReportDefinition.html" class="type-name-link" title="class in manager">ReportsView.ReportDefinition</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The name, description, and query for a table-based report.</div>
+</div>
 </div>
 </section>
 </li>
@@ -134,6 +189,58 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color"><code><a href="#CARD" class="member-name-link">CARD</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#exportDescription" class="member-name-link">exportDescription</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Description and date window belonging to the loaded report snapshot.</div>
+</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.Button</code></div>
+<div class="col-second even-row-color"><code><a href="#exportPdf" class="member-name-link">exportPdf</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Button for saving the currently loaded report as a PDF.</div>
+</div>
+<div class="col-first odd-row-color"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#exportTitle" class="member-name-link">exportTitle</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Title belonging to the loaded report snapshot.</div>
+</div>
+<div class="col-first even-row-color"><code>private long</code></div>
+<div class="col-second even-row-color"><code><a href="#loadVersion" class="member-name-link">loadVersion</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#PRODUCT_USAGE_SQL" class="member-name-link">PRODUCT_USAGE_SQL</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private static final int</code></div>
+<div class="col-second even-row-color"><code><a href="#PRODUCTS_PER_CHART_ROW" class="member-name-link">PRODUCTS_PER_CHART_ROW</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final <a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#report" class="member-name-link">report</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private boolean</code></div>
+<div class="col-second even-row-color"><code><a href="#reportReady" class="member-name-link">reportReady</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Whether report data has finished loading and can be exported.</div>
+</div>
+<div class="col-first odd-row-color"><code>private boolean</code></div>
+<div class="col-second odd-row-color"><code><a href="#savingPdf" class="member-name-link">savingPdf</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Whether a background PDF export is in progress.</div>
+</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.Label</code></div>
+<div class="col-second even-row-color"><code><a href="#status" class="member-name-link">status</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final javafx.scene.control.TableView<wbr>&lt;javafx.collections.ObservableList&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#table" class="member-name-link">table</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-javafx.scene.layout.Region">Fields inherited from class&nbsp;javafx.scene.layout.Region</h3>
 <code>USE_COMPUTED_SIZE, USE_PREF_SIZE</code></div>
@@ -152,7 +259,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(manager.ReportsView.Report)" class="member-name-link">ReportsView</a><wbr>(<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&nbsp;report)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Initializes the selected manager report view.</div>
+<div class="block">Initializes the requested manager report.</div>
 </div>
 </div>
 </section>
@@ -161,6 +268,161 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
+<div id="method-summary-table">
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addProductUsageColumns()" class="member-name-link">addProductUsageColumns</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds columns used to display product-usage results.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#buildProductUsage()" class="member-name-link">buildProductUsage</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Builds the product-usage controls and chart.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#buildStandardReport()" class="member-name-link">buildStandardReport</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Builds controls and results table for a standard report.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private double</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#chartAxisUpperBound(double)" class="member-name-link">chartAxisUpperBound</a><wbr>(double&nbsp;maximumUnits)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Calculates a padded upper bound for the usage-chart axis.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#clearTable()" class="member-name-link">clearTable</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Removes rows and columns from the table.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#configurePdfButton()" class="member-name-link">configurePdfButton</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Styles the export button, disables it until data loads, and connects its save action.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#configureTable()" class="member-name-link">configureTable</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Configures the report table appearance and resize policy.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#definitionFor(manager.ReportsView.Report)" class="member-name-link">definitionFor</a><wbr>(<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&nbsp;choice)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Looks up the name, description, and SQL query for a table-based report.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#error(java.lang.String)" class="member-name-link">error</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Updates the report status with an error message.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.layout.VBox</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#field(java.lang.String,javafx.scene.control.DatePicker)" class="member-name-link">field</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;labelText,
+ javafx.scene.control.DatePicker&nbsp;picker)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a labeled report date-picker field.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#formatUnits(java.math.BigDecimal)" class="member-name-link">formatUnits</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Rounds a number to 2 decimal places.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#formatValue(java.lang.Object,java.lang.String)" class="member-name-link">formatValue</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;column)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Formats database values for display in report cells.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadDefaultProductUsage(javafx.scene.control.DatePicker,javafx.scene.control.DatePicker,javafx.scene.layout.VBox)" class="member-name-link">loadDefaultProductUsage</a><wbr>(javafx.scene.control.DatePicker&nbsp;start,
+ javafx.scene.control.DatePicker&nbsp;end,
+ javafx.scene.layout.VBox&nbsp;chartRows)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the date pickers to the 30 days ending on the most recent order and
+loads product usage for that window.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadProductUsage(java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)" class="member-name-link">loadProductUsage</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end,
+ javafx.scene.layout.VBox&nbsp;chartRows)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Queries and displays product usage for the selected date range.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadStandardReport(manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)" class="member-name-link">loadStandardReport</a><wbr>(<a href="ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a>&nbsp;definition,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Runs a report's query on a background thread.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.control.Label</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#placeholder(java.lang.String)" class="member-name-link">placeholder</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a message for an empty report table.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#prettyName(java.lang.String)" class="member-name-link">prettyName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Turns a column name like <code>units_sold</code> into a heading like <code>Units Sold</code>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#primaryButtonStyle()" class="member-name-link">primaryButtonStyle</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the shared style for primary report actions.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.chart.BarChart<wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#productUsageChart(java.util.List,double,double)" class="member-name-link">productUsageChart</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a>&gt;&nbsp;products,
+ double&nbsp;axisUpperBound,
+ double&nbsp;axisTickUnit)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#savePdf()" class="member-name-link">savePdf</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Prompts for a PDF destination and snapshots the displayed columns, rows, and
+loaded report description before saving on a background thread.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showProductUsage(long,java.util.List,java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)" class="member-name-link">showProductUsage</a><wbr>(long&nbsp;request,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a>&gt;&nbsp;data,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end,
+ javafx.scene.layout.VBox&nbsp;chartRows)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Renders product-usage results in the report table and chart.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showProductUsageCharts(java.util.List,javafx.scene.layout.VBox)" class="member-name-link">showProductUsageCharts</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a>&gt;&nbsp;data,
+ javafx.scene.layout.VBox&nbsp;chartRows)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Renders product bars in fixed-size rows so no horizontal chart scrolling is needed.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showStandardReport(long,java.util.List,java.util.List,manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)" class="member-name-link">showStandardReport</a><wbr>(long&nbsp;request,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;columnNames,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;&nbsp;rows,
+ <a href="ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a>&nbsp;definition,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Makes one table column per query column and fills in the rows.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.control.Label</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#subtitle(java.lang.String)" class="member-name-link">subtitle</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a styled report subtitle label.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.control.Label</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#title(java.lang.String)" class="member-name-link">title</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a styled report title label.</div>
+</div>
+</div>
+</div>
+</div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-javafx.scene.layout.VBox">Methods inherited from class&nbsp;javafx.scene.layout.VBox</h3>
 <code>alignmentProperty, clearConstraints, computeMinHeight, computeMinWidth, computePrefHeight, computePrefWidth, fillWidthProperty, getAlignment, getClassCssMetaData, getContentBias, getCssMetaData, getMargin, getSpacing, getVgrow, isFillWidth, layoutChildren, requestLayout, setAlignment, setFillWidth, setMargin, setSpacing, setVgrow, spacingProperty</code></div>
@@ -188,6 +450,139 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="PRODUCTS_PER_CHART_ROW">
+<h3>PRODUCTS_PER_CHART_ROW</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">PRODUCTS_PER_CHART_ROW</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#manager.ReportsView.PRODUCTS_PER_CHART_ROW">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="CARD">
+<h3>CARD</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">CARD</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#manager.ReportsView.CARD">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="PRODUCT_USAGE_SQL">
+<h3>PRODUCT_USAGE_SQL</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">PRODUCT_USAGE_SQL</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#manager.ReportsView.PRODUCT_USAGE_SQL">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="report">
+<h3>report</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type"><a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></span>&nbsp;<span class="element-name">report</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="table">
+<h3>table</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.TableView&lt;javafx.collections.ObservableList&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;</span>&nbsp;<span class="element-name">table</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="status">
+<h3>status</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">status</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="exportPdf">
+<h3>exportPdf</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.Button</span>&nbsp;<span class="element-name">exportPdf</span></div>
+<div class="block">Button for saving the currently loaded report as a PDF.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="exportTitle">
+<h3>exportTitle</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">exportTitle</span></div>
+<div class="block">Title belonging to the loaded report snapshot.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="exportDescription">
+<h3>exportDescription</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">exportDescription</span></div>
+<div class="block">Description and date window belonging to the loaded report snapshot.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="reportReady">
+<h3>reportReady</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">reportReady</span></div>
+<div class="block">Whether report data has finished loading and can be exported.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="savingPdf">
+<h3>savingPdf</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">savingPdf</span></div>
+<div class="block">Whether a background PDF export is in progress.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadVersion">
+<h3>loadVersion</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">long</span>&nbsp;<span class="element-name">loadVersion</span></div>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li>
 <section class="constructor-details" id="constructor-detail">
@@ -198,7 +593,305 @@ loadScripts(document, 'script');</script>
 <h3>ReportsView</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ReportsView</span><wbr><span class="parameters">(<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&nbsp;report)</span></div>
-<div class="block">Initializes the selected manager report view.</div>
+<div class="block">Initializes the requested manager report.</div>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
+<!-- ============ METHOD DETAIL ========== -->
+<li>
+<section class="method-details" id="method-detail">
+<h2>Method Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="buildProductUsage()">
+<h3>buildProductUsage</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">buildProductUsage</span>()</div>
+<div class="block">Builds the product-usage controls and chart.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="field(java.lang.String,javafx.scene.control.DatePicker)">
+<h3>field</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">field</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;labelText,
+ javafx.scene.control.DatePicker&nbsp;picker)</span></div>
+<div class="block">Creates a labeled report date-picker field.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadDefaultProductUsage(javafx.scene.control.DatePicker,javafx.scene.control.DatePicker,javafx.scene.layout.VBox)">
+<h3>loadDefaultProductUsage</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadDefaultProductUsage</span><wbr><span class="parameters">(javafx.scene.control.DatePicker&nbsp;start,
+ javafx.scene.control.DatePicker&nbsp;end,
+ javafx.scene.layout.VBox&nbsp;chartRows)</span></div>
+<div class="block">Sets the date pickers to the 30 days ending on the most recent order and
+loads product usage for that window. Uses today's date if no
+orders are found.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>start</code> - the "From" date picker to fill in</dd>
+<dd><code>end</code> - the "Through" date picker to fill in</dd>
+<dd><code>chartRows</code> - the chart to draw the results in</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadProductUsage(java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)">
+<h3>loadProductUsage</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadProductUsage</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end,
+ javafx.scene.layout.VBox&nbsp;chartRows)</span></div>
+<div class="block">Queries and displays product usage for the selected date range.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="showProductUsage(long,java.util.List,java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)">
+<h3>showProductUsage</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showProductUsage</span><wbr><span class="parameters">(long&nbsp;request,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a>&gt;&nbsp;data,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end,
+ javafx.scene.layout.VBox&nbsp;chartRows)</span></div>
+<div class="block">Renders product-usage results in the report table and chart.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="showProductUsageCharts(java.util.List,javafx.scene.layout.VBox)">
+<h3>showProductUsageCharts</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showProductUsageCharts</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a>&gt;&nbsp;data,
+ javafx.scene.layout.VBox&nbsp;chartRows)</span></div>
+<div class="block">Renders product bars in fixed-size rows so no horizontal chart scrolling is needed.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="chartAxisUpperBound(double)">
+<h3>chartAxisUpperBound</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">chartAxisUpperBound</span><wbr><span class="parameters">(double&nbsp;maximumUnits)</span></div>
+<div class="block">Calculates a padded upper bound for the usage-chart axis.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="productUsageChart(java.util.List,double,double)">
+<h3>productUsageChart</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.chart.BarChart&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Number.html" title="class or interface in java.lang" class="external-link">Number</a>&gt;</span>&nbsp;<span class="element-name">productUsageChart</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a>&gt;&nbsp;products,
+ double&nbsp;axisUpperBound,
+ double&nbsp;axisTickUnit)</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="buildStandardReport()">
+<h3>buildStandardReport</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">buildStandardReport</span>()</div>
+<div class="block">Builds controls and results table for a standard report.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="configureTable()">
+<h3>configureTable</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">configureTable</span>()</div>
+<div class="block">Configures the report table appearance and resize policy.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="configurePdfButton()">
+<h3>configurePdfButton</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">configurePdfButton</span>()</div>
+<div class="block">Styles the export button, disables it until data loads, and connects its save action.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="savePdf()">
+<h3>savePdf</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">savePdf</span>()</div>
+<div class="block">Prompts for a PDF destination and snapshots the displayed columns, rows, and
+loaded report description before saving on a background thread. Cancelling
+leaves the report unchanged; an existing file is confirmed when the PDF
+extension is appended. Export stays disabled while saving, and completion
+messages are shown only if the same report load is still displayed.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadStandardReport(manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)">
+<h3>loadStandardReport</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadStandardReport</span><wbr><span class="parameters">(<a href="ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a>&nbsp;definition,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end)</span></div>
+<div class="block">Runs a report's query on a background thread. Also, shows the results.
+The dates are used for Sales by Item.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>definition</code> - the report to run</dd>
+<dd><code>start</code> - the first day to include (Sales by Item only)</dd>
+<dd><code>end</code> - the last day to include (Sales by Item only)</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="showStandardReport(long,java.util.List,java.util.List,manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)">
+<h3>showStandardReport</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showStandardReport</span><wbr><span class="parameters">(long&nbsp;request,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;columnNames,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;&nbsp;rows,
+ <a href="ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a>&nbsp;definition,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;start,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;end)</span></div>
+<div class="block">Makes one table column per query column and fills in the rows.
+Nothing is done if a newer load has started since this one.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>request</code> - the load number from when this load started</dd>
+<dd><code>columnNames</code> - the column names from the query</dd>
+<dd><code>rows</code> - the formatted cell values for each row</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="addProductUsageColumns()">
+<h3>addProductUsageColumns</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addProductUsageColumns</span>()</div>
+<div class="block">Adds columns used to display product-usage results.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="placeholder(java.lang.String)">
+<h3>placeholder</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">placeholder</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</span></div>
+<div class="block">Creates a message for an empty report table.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="clearTable()">
+<h3>clearTable</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">clearTable</span>()</div>
+<div class="block">Removes rows and columns from the table.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="error(java.lang.String)">
+<h3>error</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">error</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</span></div>
+<div class="block">Updates the report status with an error message.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="title(java.lang.String)">
+<h3>title</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">title</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</span></div>
+<div class="block">Creates a styled report title label.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="subtitle(java.lang.String)">
+<h3>subtitle</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">subtitle</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</span></div>
+<div class="block">Creates a styled report subtitle label.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="primaryButtonStyle()">
+<h3>primaryButtonStyle</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">primaryButtonStyle</span>()</div>
+<div class="block">Returns the shared style for primary report actions.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="formatUnits(java.math.BigDecimal)">
+<h3>formatUnits</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">formatUnits</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a>&nbsp;value)</span></div>
+<div class="block">Rounds a number to 2 decimal places.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>value</code> - the number to format</dd>
+<dt>Returns:</dt>
+<dd>the formatted number</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="formatValue(java.lang.Object,java.lang.String)">
+<h3>formatValue</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">formatValue</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;column)</span></div>
+<div class="block">Formats database values for display in report cells.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="prettyName(java.lang.String)">
+<h3>prettyName</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">prettyName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
+<div class="block">Turns a column name like <code>units_sold</code> into a heading like <code>Units Sold</code>.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>value</code> - the column name from the query</dd>
+<dt>Returns:</dt>
+<dd>the column name as a title-case heading</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="definitionFor(manager.ReportsView.Report)">
+<h3>definitionFor</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></span>&nbsp;<span class="element-name">definitionFor</span><wbr><span class="parameters">(<a href="ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a>&nbsp;choice)</span></div>
+<div class="block">Looks up the name, description, and SQL query for a table-based report.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>choice</code> - the report to look up</dd>
+<dt>Returns:</dt>
+<dd>the report's definition</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if <code>choice</code> is <code>PRODUCT_USAGE</code>, which has its own chart</dd>
+</dl>
 </div>
 </section>
 </li>

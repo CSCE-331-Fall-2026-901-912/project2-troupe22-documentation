@@ -97,6 +97,11 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public static final class </span><span class="element-name type-name-label">SideBar.OrderItem</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Items in the current order, including customized options, quantity, and toppings.</div>
+<dl class="notes">
+<dt>Author:</dt>
+<dd>Riley Schall, Sanjana Anand</dd>
+</dl>
 </div>
 </section>
 <section class="summary">
@@ -149,7 +154,7 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sweetness,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ice)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Initializes a line item with its selected customizations.</div>
+<div class="block">Constructs a new OrderItem with specified customizations and pricing.</div>
 </div>
 </div>
 </section>
@@ -168,7 +173,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#unitPrice()" class="member-name-link">unitPrice</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Calculates the base price plus all selected topping surcharges.</div>
+<div class="block">Calculates the unit price of the item including base price and all topping surcharges.</div>
 </div>
 </div>
 </div>
@@ -261,7 +266,16 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="SideBar.Topping.html" title="class in cashier">SideBar.Topping</a>&gt;&nbsp;toppings,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sweetness,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;ice)</span></div>
-<div class="block">Initializes a line item with its selected customizations.</div>
+<div class="block">Constructs a new OrderItem with specified customizations and pricing.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - The ID of the menu item</dd>
+<dd><code>name</code> - The name of the menu item</dd>
+<dd><code>basePrice</code> - The base price of the item</dd>
+<dd><code>toppings</code> - The list of selected toppings</dd>
+<dd><code>sweetness</code> - The chosen sweetness level</dd>
+<dd><code>ice</code> - The chosen ice level</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -278,7 +292,11 @@ loadScripts(document, 'script');</script>
 <h3>unitPrice</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name">unitPrice</span>()</div>
-<div class="block">Calculates the base price plus all selected topping surcharges.</div>
+<div class="block">Calculates the unit price of the item including base price and all topping surcharges.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The total price for a single unit of this customized item</dd>
+</dl>
 </div>
 </section>
 </li>

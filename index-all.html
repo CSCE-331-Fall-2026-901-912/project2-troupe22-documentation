@@ -49,29 +49,111 @@ loadScripts(document, 'script');</script>
 <div class="header">
 <h1>Index</h1>
 </div>
-<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a>
+<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:X">X</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a><span class="vertical-separator">|</span><a href="constant-values.html">Constant&nbsp;Field&nbsp;Values</a>
 <h2 class="title" id="I:A">A</h2>
 <dl class="index">
+<dt><a href="manager/MgrInventory.html#ADD_BUTTON" class="member-name-link">ADD_BUTTON</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#addBar" class="member-name-link">addBar</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#addButton" class="member-name-link">addButton</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#addDetail(javafx.scene.layout.VBox,java.lang.String)" class="member-name-link">addDetail(VBox, String)</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Appends an order detail label to an item block container.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#addInventoryItem()" class="member-name-link">addInventoryItem()</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Adds the created inventory item to the inventory table in the database</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#addInventoryItem()" class="member-name-link">addInventoryItem()</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Validates and saves a new inventory ingredient.</div>
+</dd>
 <dt><a href="cashier/SideBar.html#addItem(int,java.lang.String,java.math.BigDecimal,java.util.List,java.lang.String,java.lang.String)" class="member-name-link">addItem(int, String, BigDecimal, List, String, String)</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
 <dd>
-<div class="block">Adds a matching item to the order or increments its quantity.</div>
+<div class="block">Adds an item to the current order list or increments its quantity if an identical item already exists.</div>
 </dd>
+<dt><a href="manager/MgrInventory.html#addItemToDatabase(java.sql.Connection,java.lang.String,double,double)" class="member-name-link">addItemToDatabase(Connection, String, double, double)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">INSERT INTO inventory (name, amount, price_modifier) VALUES (?, ?, ?)</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html#addMenuItem" class="member-name-link">addMenuItem</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="manager/AddMenuItem.html" class="type-name-link" title="class in manager">AddMenuItem</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
 <dd>
-<div class="block">Manager screen for publishing seasonal menu items and their recipes.</div>
+<div class="block">Manager screen for publishing menu items and their recipes.</div>
 </dd>
 <dt><a href="manager/AddMenuItem.html#%3Cinit%3E()" class="member-name-link">AddMenuItem()</a> - Constructor for class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
 <dd>
-<div class="block">Initializes the menu-item publishing form.</div>
+<div class="block">Initializes the AddMenuItem Class and adds the GUI elements</div>
 </dd>
+<dt><a href="manager/AddMenuItem.InventoryOption.html" class="type-name-link" title="class in manager">AddMenuItem.InventoryOption</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>
+<div class="block">Represents an inventory item option with an ID and name for selection lists.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#addNewRow()" class="member-name-link">addNewRow()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal add new row operation for this view.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#addOrderToDB(java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal)" class="member-name-link">addOrderToDB(BigDecimal, BigDecimal, BigDecimal)</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Prompts the user for confirmation and records the final order, totals, and tip into the database.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#addProductUsageColumns()" class="member-name-link">addProductUsageColumns()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Adds columns used to display product-usage results.</div>
+</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#amount" class="member-name-link">amount</a> - Variable in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#AMOUNT_W" class="member-name-link">AMOUNT_W</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.EditRow.html#amountField" class="member-name-link">amountField</a> - Variable in class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:B">B</h2>
 <dl class="index">
 <dt><a href="cashier/SideBar.OrderItem.html#basePrice" class="member-name-link">basePrice</a> - Variable in class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="cashier/MainBody.html#BG" class="member-name-link">BG</a> - Static variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/MainBody.html#BORDER" class="member-name-link">BORDER</a> - Static variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#buildColumnHeaders()" class="member-name-link">buildColumnHeaders()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal build column headers operation for this view.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#buildLayout()" class="member-name-link">buildLayout()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal build layout operation for this view.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#buildProductUsage()" class="member-name-link">buildProductUsage()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Builds the product-usage controls and chart.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#buildRow(javafx.scene.Node,javafx.scene.Node,javafx.scene.Node)" class="member-name-link">buildRow(Node, Node, Node)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">One table row: a name column that grows, then two fixed-width columns.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#buildStandardReport()" class="member-name-link">buildStandardReport()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Builds controls and results table for a standard report.</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html#BUTTON" class="member-name-link">BUTTON</a> - Static variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:C">C</h2>
 <dl class="index">
+<dt><a href="manager/MgrInventory.html#cancelButton" class="member-name-link">cancelButton</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#CARD" class="member-name-link">CARD</a> - Static variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#CARD_STYLE" class="member-name-link">CARD_STYLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/MainBody.html#cardStyle(boolean)" class="member-name-link">cardStyle(boolean)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Returns the normal or hover styling for a menu card.</div>
+</dd>
 <dt><a href="cashier/package-summary.html">cashier</a> - package cashier</dt>
 <dd>&nbsp;</dd>
 <dt><a href="cashier/CashierMain.html" class="type-name-link" title="class in cashier">CashierMain</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
@@ -82,12 +164,84 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="cashier/MainBody.html#CATEGORIES" class="member-name-link">CATEGORIES</a> - Static variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="cashier/Checkout.html" class="type-name-link" title="class in cashier">Checkout</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
+<dt><a href="manager/AddMenuItem.html#categorySelector" class="member-name-link">categorySelector</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#cell(javafx.scene.Node,double,java.lang.String)" class="member-name-link">cell(Node, double, String)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Wraps table content in a consistently sized cell.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#chargeButton" class="member-name-link">chargeButton</a> - Variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#chartAxisUpperBound(double)" class="member-name-link">chartAxisUpperBound(double)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Calculates a padded upper bound for the usage-chart axis.</div>
+</dd>
+<dt><a href="cashier/Checkout.html" class="type-name-link" title="class in cashier">Checkout</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
+<dd>
+<div class="block">Handles the order checkout and database submission.</div>
+</dd>
+<dt><a href="cashier/Checkout.html#%3Cinit%3E()" class="member-name-link">Checkout()</a> - Constructor for class cashier.<a href="cashier/Checkout.html" title="class in cashier">Checkout</a></dt>
+<dd>
+<div class="block">Private constructor to prevent external instances of the class.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#clearTable()" class="member-name-link">clearTable()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Removes rows and columns from the table.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#configurePdfButton()" class="member-name-link">configurePdfButton()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Styles the export button, disables it until data loads, and connects its save action.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#configureTable()" class="member-name-link">configureTable()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Configures the report table appearance and resize policy.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#confirmDelete(java.lang.String)" class="member-name-link">confirmDelete(String)</a> - Static method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Shows a confirmation dialog before deleting an employee.</div>
+</dd>
+<dt><a href="manager/MainBodyM.Employee.html#contactInfo" class="member-name-link">contactInfo</a> - Variable in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/MainBodyM.Employee.html#param-contactInfo"><code>contactInfo</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MainBodyM.Employee.html#contactInfo()" class="member-name-link">contactInfo()</a> - Method in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/MainBodyM.Employee.html#param-contactInfo"><code>contactInfo</code></a> record component.</div>
+</dd>
+<dt><a href="manager/ManagerView.html#content" class="member-name-link">content</a> - Variable in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#createEmployeeRow(manager.MainBodyM.Employee)" class="member-name-link">createEmployeeRow(MainBodyM.Employee)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Builds a hoverable row containing an employee's name, ID, contact, and pay.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#createInfoField(java.lang.String,java.lang.String)" class="member-name-link">createInfoField(String, String)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Creates a labeled read-only field for employee details.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#currentCategory" class="member-name-link">currentCategory</a> - Variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/MainBody.Customization.html#%3Cinit%3E(java.util.List,java.lang.String,java.lang.String)" class="member-name-link">Customization(List, String, String)</a> - Constructor for class cashier.<a href="cashier/MainBody.Customization.html" title="class in cashier">MainBody.Customization</a></dt>
+<dd>
+<div class="block">Captures the selected toppings, sweetness, and ice preferences.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#customize(int,java.lang.String,java.math.BigDecimal)" class="member-name-link">customize(int, String, BigDecimal)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Opens the customization dialog and adds the configured item to the order.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:D">D</h2>
 <dl class="index">
 <dt><a href="manager/ReportsView.Report.html#DAILY_SALES" class="member-name-link">DAILY_SALES</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#dailySales" class="member-name-link">dailySales</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#DANGER_BUTTON_STYLE" class="member-name-link">DANGER_BUTTON_STYLE</a> - Static variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Style used to distinguish the employee deletion action.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#DARK" class="member-name-link">DARK</a> - Static variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#DARK" class="member-name-link">DARK</a> - Static variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="database/package-summary.html">database</a> - package database</dt>
 <dd>&nbsp;</dd>
@@ -95,31 +249,364 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Opens connections to the project PostgreSQL database.</div>
 </dd>
+<dt><a href="database/DatabaseConnection.html#%3Cinit%3E()" class="member-name-link">DatabaseConnection()</a> - Constructor for class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>
+<div class="block">Prevents instantiation of this database connection utility.</div>
+</dd>
+<dt><a href="database/DatabaseConnection.html#DEFAULT_DATABASE" class="member-name-link">DEFAULT_DATABASE</a> - Static variable in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="database/DatabaseConnection.html#DEFAULT_HOST" class="member-name-link">DEFAULT_HOST</a> - Static variable in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="database/DatabaseConnection.html#DEFAULT_PORT" class="member-name-link">DEFAULT_PORT</a> - Static variable in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="database/DatabaseConnection.html#DEFAULT_USER" class="member-name-link">DEFAULT_USER</a> - Static variable in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#definitionFor(manager.ReportsView.Report)" class="member-name-link">definitionFor(ReportsView.Report)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Looks up the name, description, and SQL query for a table-based report.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#DELETE_HOVER" class="member-name-link">DELETE_HOVER</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#DELETE_IDLE" class="member-name-link">DELETE_IDLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#deletedIds" class="member-name-link">deletedIds</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#deleteEmployee(int)" class="member-name-link">deleteEmployee(int)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Deletes the employee with the supplied ID.</div>
+</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#description" class="member-name-link">description</a> - Variable in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/ReportsView.ReportDefinition.html#param-description"><code>description</code></a> record component.</div>
+</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#description()" class="member-name-link">description()</a> - Method in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/ReportsView.ReportDefinition.html#param-description"><code>description</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#DIVIDER" class="member-name-link">DIVIDER</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Vertical line on the left edge of a column, like the lines in the sketch.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#drinkCard(int,java.lang.String,java.math.BigDecimal)" class="member-name-link">drinkCard(int, String, BigDecimal)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Builds a selectable card for a menu item.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
+<dt><a href="manager/MgrInventory.html#editing" class="member-name-link">editing</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.EditRow.html#%3Cinit%3E(manager.MgrInventory.InventoryItem)" class="member-name-link">EditRow(MgrInventory.InventoryItem)</a> - Constructor for class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>
+<div class="block">Builds editable controls for an inventory record.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#editRows" class="member-name-link">editRows</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#%3Cinit%3E(int,java.lang.String,java.math.BigDecimal,java.lang.String)" class="member-name-link">Employee(int, String, BigDecimal, String)</a> - Constructor for record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Creates an instance of a <code>Employee</code> record class.</div>
+</dd>
 <dt><a href="manager/ReportsView.Report.html#EMPLOYEE_PERFORMANCE" class="member-name-link">EMPLOYEE_PERFORMANCE</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.EmployeeChoice.html#%3Cinit%3E(int,java.lang.String)" class="member-name-link">EmployeeChoice(int, String)</a> - Constructor for class cashier.<a href="cashier/SideBar.EmployeeChoice.html" title="class in cashier">SideBar.EmployeeChoice</a></dt>
+<dd>
+<div class="block">Constructs an EmployeeChoice object.</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html#employeePerformance" class="member-name-link">employeePerformance</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#employeePicker" class="member-name-link">employeePicker</a> - Variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#employees" class="member-name-link">employees</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#enterEditMode()" class="member-name-link">enterEditMode()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal enter edit mode operation for this view.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.InventoryOption.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class manager.<a href="manager/AddMenuItem.InventoryOption.html" title="class in manager">AddMenuItem.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">Indicates whether some other object is "equal to" this one.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.InventoryOption.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class manager.<a href="manager/SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#error(java.lang.String)" class="member-name-link">error(String)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Updates the report status with an error message.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#errorLabel(java.lang.String)" class="member-name-link">errorLabel(String)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Creates a wrapped label for employee-loading errors.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#exists(java.sql.Connection,java.lang.String,java.lang.String)" class="member-name-link">exists(Connection, String, String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Checks if a given element exists in a certain table of the database</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#exists(java.sql.Connection,java.lang.String,java.lang.String)" class="member-name-link">exists(Connection, String, String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Checks whether a case-insensitive name already exists in a table.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#exitEditMode()" class="member-name-link">exitEditMode()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal exit edit mode operation for this view.</div>
+</dd>
+<dt><a href="manager/ReportPdfExporter.html#export(java.io.File,java.lang.String,java.lang.String,java.util.List,java.util.List)" class="member-name-link">export(File, String, String, List, List)</a> - Static method in class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Saves a report, wrapping long cells and repeating headings on each page.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#exportDescription" class="member-name-link">exportDescription</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Description and date window belonging to the loaded report snapshot.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#exportPdf" class="member-name-link">exportPdf</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Button for saving the currently loaded report as a PDF.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#exportTitle" class="member-name-link">exportTitle</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Title belonging to the loaded report snapshot.</div>
+</dd>
+</dl>
+<h2 class="title" id="I:F">F</h2>
+<dl class="index">
+<dt><a href="manager/MainBodyM.html#fetchEmployees()" class="member-name-link">fetchEmployees()</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Reads employee IDs, names, pay levels, and contact information from the database.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#fetchItemsFromDatabase()" class="member-name-link">fetchItemsFromDatabase()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">SELECT id, name, amount, price_modifier FROM inventory ORDER BY name</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#field(java.lang.String)" class="member-name-link">field(String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Creates a <code>TextField</code> with a prompt displayed inside</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#field(java.lang.String)" class="member-name-link">field(String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Creates a consistently styled text field with the supplied prompt.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#field(java.lang.String,javafx.scene.control.DatePicker)" class="member-name-link">field(String, DatePicker)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Creates a labeled report date-picker field.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#FIELD_ERROR_STYLE" class="member-name-link">FIELD_ERROR_STYLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.html#FIELD_STYLE" class="member-name-link">FIELD_STYLE</a> - Static variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#FIELD_STYLE" class="member-name-link">FIELD_STYLE</a> - Static variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Style applied to editable employee form fields.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#FIELD_STYLE" class="member-name-link">FIELD_STYLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#FIELD_STYLE" class="member-name-link">FIELD_STYLE</a> - Static variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#flagInvalid(javafx.scene.control.TextField,java.lang.String)" class="member-name-link">flagInvalid(TextField, String)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Marks a field invalid and displays its validation message.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#fmt(double)" class="member-name-link">fmt(double)</a> - Static method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">40.0 -&gt; "40", 12.50 -&gt; "12.5"</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#formatPay(java.math.BigDecimal)" class="member-name-link">formatPay(BigDecimal)</a> - Static method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Formats pay with a dollar sign and two decimal places.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#formatPayAmount(java.math.BigDecimal)" class="member-name-link">formatPayAmount(BigDecimal)</a> - Static method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Formats pay to two decimal places using half-up rounding.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#formatUnits(java.math.BigDecimal)" class="member-name-link">formatUnits(BigDecimal)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Rounds a number to 2 decimal places.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#formatValue(java.lang.Object,java.lang.String)" class="member-name-link">formatValue(Object, String)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Formats database values for display in report cells.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:G">G</h2>
 <dl class="index">
+<dt><a href="manager/MgrInventory.InventoryItem.html#getAmount()" class="member-name-link">getAmount()</a> - Method in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="database/DatabaseConnection.html#getConnection()" class="member-name-link">getConnection()</a> - Static method in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
 <dd>
 <div class="block">Creates a new JDBC connection.</div>
 </dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#getId()" class="member-name-link">getId()</a> - Method in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#getName()" class="member-name-link">getName()</a> - Method in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#getPriceModifier()" class="member-name-link">getPriceModifier()</a> - Method in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#GRAY" class="member-name-link">GRAY</a> - Static variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+</dl>
+<h2 class="title" id="I:H">H</h2>
+<dl class="index">
+<dt><a href="manager/AddMenuItem.InventoryOption.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class manager.<a href="manager/AddMenuItem.InventoryOption.html" title="class in manager">AddMenuItem.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
+</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#hashCode()" class="member-name-link">hashCode()</a> - Method in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">Returns a hash code value for this object.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.InventoryOption.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class manager.<a href="manager/SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#HEADER_ROW_STYLE" class="member-name-link">HEADER_ROW_STYLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#HEADER_TEXT" class="member-name-link">HEADER_TEXT</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:I">I</h2>
 <dl class="index">
+<dt><a href="cashier/MainBody.Customization.html#ice" class="member-name-link">ice</a> - Variable in class cashier.<a href="cashier/MainBody.Customization.html" title="class in cashier">MainBody.Customization</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.OrderItem.html#ice" class="member-name-link">ice</a> - Variable in class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.EmployeeChoice.html#id" class="member-name-link">id</a> - Variable in class cashier.<a href="cashier/SideBar.EmployeeChoice.html" title="class in cashier">SideBar.EmployeeChoice</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.OrderItem.html#id" class="member-name-link">id</a> - Variable in class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.Topping.html#id" class="member-name-link">id</a> - Variable in class cashier.<a href="cashier/SideBar.Topping.html" title="class in cashier">SideBar.Topping</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.InventoryOption.html#id" class="member-name-link">id</a> - Variable in class manager.<a href="manager/AddMenuItem.InventoryOption.html" title="class in manager">AddMenuItem.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#id" class="member-name-link">id</a> - Variable in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/MainBodyM.Employee.html#param-id"><code>id</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#id" class="member-name-link">id</a> - Variable in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.InventoryOption.html#id" class="member-name-link">id</a> - Variable in class manager.<a href="manager/SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#id()" class="member-name-link">id()</a> - Method in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/MainBodyM.Employee.html#param-id"><code>id</code></a> record component.</div>
+</dd>
+<dt><a href="cashier/Checkout.html#ID_LOCK" class="member-name-link">ID_LOCK</a> - Static variable in class cashier.<a href="cashier/Checkout.html" title="class in cashier">Checkout</a></dt>
+<dd>
+<div class="block">Advisory lock constant used for safe concurrent order ID generation.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#ingredients" class="member-name-link">ingredients</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#ingredients" class="member-name-link">ingredients</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#insertEmployee(java.lang.String,java.math.BigDecimal,java.lang.String)" class="member-name-link">insertEmployee(String, BigDecimal, String)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Inserts an employee using one more than the current maximum employee ID.</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html#inventory" class="member-name-link">inventory</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.html#inventoryAmountField" class="member-name-link">inventoryAmountField</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#inventoryAmountField" class="member-name-link">inventoryAmountField</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#%3Cinit%3E(int,java.lang.String,double,double)" class="member-name-link">InventoryItem(int, String, double, double)</a> - Constructor for class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>
+<div class="block">Creates an inventory item with its persisted values.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#inventoryModifierField" class="member-name-link">inventoryModifierField</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#inventoryModifierField" class="member-name-link">inventoryModifierField</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.html#inventoryNameField" class="member-name-link">inventoryNameField</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#inventoryNameField" class="member-name-link">inventoryNameField</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.InventoryOption.html#%3Cinit%3E(int,java.lang.String)" class="member-name-link">InventoryOption(int, String)</a> - Constructor for class manager.<a href="manager/AddMenuItem.InventoryOption.html" title="class in manager">AddMenuItem.InventoryOption</a></dt>
+<dd>
+<div class="block">Constructs an InventoryOption using the provided id and name.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.InventoryOption.html#%3Cinit%3E(int,java.lang.String)" class="member-name-link">InventoryOption(int, String)</a> - Constructor for class manager.<a href="manager/SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a></dt>
+<dd>
+<div class="block">Stores an inventory identifier and display name for selection.</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html#item(java.lang.String)" class="member-name-link">item(String)</a> - Method in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#itemList" class="member-name-link">itemList</a> - Variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#items" class="member-name-link">items</a> - Variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#items" class="member-name-link">items</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:L">L</h2>
 <dl class="index">
-<dt><a href="manager/ReportsView.Report.html#LOW_INVENTORY" class="member-name-link">LOW_INVENTORY</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dt><a href="manager/MainBodyM.html#labeledField(java.lang.String,javafx.scene.control.TextField)" class="member-name-link">labeledField(String, TextField)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Places a label above an editable employee field.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#labeledValue(java.lang.String,javafx.scene.Node)" class="member-name-link">labeledValue(String, Node)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Places a label above a form control or read-only value.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#labelled(java.lang.String,javafx.scene.control.TextField)" class="member-name-link">labelled(String, TextField)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Creates a VBox with a specified Label and TextField</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#labelled(java.lang.String,javafx.scene.control.TextField)" class="member-name-link">labelled(String, TextField)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Groups an input field with its label.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#loadAutumnExample()" class="member-name-link">loadAutumnExample()</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Prepares a concrete new, unsold seasonal item without writing to the database.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#loadDefaultProductUsage(javafx.scene.control.DatePicker,javafx.scene.control.DatePicker,javafx.scene.layout.VBox)" class="member-name-link">loadDefaultProductUsage(DatePicker, DatePicker, VBox)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Sets the date pickers to the 30 days ending on the most recent order and
+loads product usage for that window.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#loadEmployees()" class="member-name-link">loadEmployees()</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Loads the list of employees from the database and populates the employee picker combo box.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#loadEmployees(javafx.scene.layout.VBox,javafx.scene.control.Label,javafx.scene.control.ScrollPane)" class="member-name-link">loadEmployees(VBox, Label, ScrollPane)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Loads employee records asynchronously and updates the employee list.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#loadInventory()" class="member-name-link">loadInventory()</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Loads the inventory from the database and adds it to the InventoryOptions section</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#loadInventory()" class="member-name-link">loadInventory()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal load inventory operation for this view.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#loadInventory()" class="member-name-link">loadInventory()</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Loads inventory ingredients into the recipe selector.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#loadProductUsage(java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)" class="member-name-link">loadProductUsage(LocalDate, LocalDate, VBox)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Queries and displays product usage for the selected date range.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#loadPublishedItems()" class="member-name-link">loadPublishedItems()</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Loads and displays published seasonal menu items.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#loadStandardReport(manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)" class="member-name-link">loadStandardReport(ReportsView.ReportDefinition, LocalDate, LocalDate)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Runs a report's query on a background thread.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#loadVersion" class="member-name-link">loadVersion</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:M">M</h2>
@@ -142,24 +629,32 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Initializes the cashier menu and order workspace.</div>
 </dd>
+<dt><a href="cashier/MainBody.Customization.html" class="type-name-link" title="class in cashier">MainBody.Customization</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="manager/MainBodyM.html" class="type-name-link" title="class in manager">MainBodyM</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="manager/MainBodyM.html#%3Cinit%3E()" class="member-name-link">MainBodyM()</a> - Constructor for class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
 <dd>
-<div class="block">Initializes the employee-management view with navigation callbacks.</div>
+<div class="block">Initializes employee management with the supplied navigation callbacks.</div>
 </dd>
 <dt><a href="manager/MainBodyM.html#%3Cinit%3E(java.lang.Runnable)" class="member-name-link">MainBodyM(Runnable)</a> - Constructor for class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
 <dd>
-<div class="block">Initializes the employee-management view with navigation callbacks.</div>
+<div class="block">Initializes employee management with the supplied navigation callbacks.</div>
 </dd>
 <dt><a href="manager/MainBodyM.html#%3Cinit%3E(java.lang.Runnable,java.lang.Runnable)" class="member-name-link">MainBodyM(Runnable, Runnable)</a> - Constructor for class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
 <dd>
-<div class="block">Initializes the employee-management view with navigation callbacks.</div>
+<div class="block">Creates the employee screen with inventory and report navigation.</div>
 </dd>
 <dt><a href="manager/MainBodyM.html#%3Cinit%3E(java.lang.Runnable,java.lang.Runnable,java.lang.Runnable)" class="member-name-link">MainBodyM(Runnable, Runnable, Runnable)</a> - Constructor for class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
 <dd>
-<div class="block">Initializes the employee-management view with navigation callbacks.</div>
+<div class="block">Creates the employee screen and stores its navigation callbacks.</div>
 </dd>
+<dt><a href="manager/MainBodyM.Employee.html" class="type-name-link" title="class in manager">MainBodyM.Employee</a> - Record Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>
+<div class="block">Employee data used by the list and edit form.</div>
+</dd>
+<dt><a href="manager/ManagerView.html#mainScroll" class="member-name-link">mainScroll</a> - Variable in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="manager/package-summary.html">manager</a> - package manager</dt>
 <dd>&nbsp;</dd>
 <dt><a href="manager/ManagerView.html" class="type-name-link" title="class in manager">ManagerView</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
@@ -168,8 +663,12 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="manager/ManagerView.html#%3Cinit%3E()" class="member-name-link">ManagerView()</a> - Constructor for class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
 <dd>
-<div class="block">Initializes the manager navigation and default employee view.</div>
+<div class="block">Initializes the manager view with the sidebar and main view</div>
 </dd>
+<dt><a href="cashier/MainBody.html#menuArea" class="member-name-link">menuArea</a> - Variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#menuItems" class="member-name-link">menuItems</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="manager/MgrInventory.html" class="type-name-link" title="class in manager">MgrInventory</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
 <dd>
 <div class="block">Iteems inventory page, laid out like the whiteboard sketch:
@@ -184,25 +683,250 @@ calculating customer costs.</div>
 <dd>
 <div class="block">Initializes the inventory page and loads its records.</div>
 </dd>
+<dt><a href="manager/MgrInventory.EditRow.html" class="type-name-link" title="class in manager">MgrInventory.EditRow</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>
+<div class="block">The editable version of one row (text fields + delete button).</div>
+</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html" class="type-name-link" title="class in manager">MgrInventory.InventoryItem</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>
+<div class="block">One item.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#money(java.math.BigDecimal)" class="member-name-link">money(BigDecimal)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Formats a decimal amount as currency for display.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#money(java.math.BigDecimal)" class="member-name-link">money(BigDecimal)</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Formats a BigDecimal monetary value into a standard currency string.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#MUTED" class="member-name-link">MUTED</a> - Static variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:N">N</h2>
 <dl class="index">
+<dt><a href="cashier/SideBar.EmployeeChoice.html#name" class="member-name-link">name</a> - Variable in class cashier.<a href="cashier/SideBar.EmployeeChoice.html" title="class in cashier">SideBar.EmployeeChoice</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.OrderItem.html#name" class="member-name-link">name</a> - Variable in class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.Topping.html#name" class="member-name-link">name</a> - Variable in class cashier.<a href="cashier/SideBar.Topping.html" title="class in cashier">SideBar.Topping</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.InventoryOption.html#name" class="member-name-link">name</a> - Variable in class manager.<a href="manager/AddMenuItem.InventoryOption.html" title="class in manager">AddMenuItem.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#name" class="member-name-link">name</a> - Variable in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/MainBodyM.Employee.html#param-name"><code>name</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#name" class="member-name-link">name</a> - Variable in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#name" class="member-name-link">name</a> - Variable in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/ReportsView.ReportDefinition.html#param-name"><code>name</code></a> record component.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.InventoryOption.html#name" class="member-name-link">name</a> - Variable in class manager.<a href="manager/SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#name()" class="member-name-link">name()</a> - Method in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/MainBodyM.Employee.html#param-name"><code>name</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MgrInventory.EditRow.html#name()" class="member-name-link">name()</a> - Method in class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>
+<div class="block">Returns the trimmed inventory name entered for this row.</div>
+</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#name()" class="member-name-link">name()</a> - Method in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/ReportsView.ReportDefinition.html#param-name"><code>name</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#NAME_TEXT" class="member-name-link">NAME_TEXT</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.html#nameField" class="member-name-link">nameField</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.EditRow.html#nameField" class="member-name-link">nameField</a> - Variable in class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#nameField" class="member-name-link">nameField</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/Checkout.html#nextId(java.sql.Connection,java.lang.String)" class="member-name-link">nextId(Connection, String)</a> - Static method in class cashier.<a href="cashier/Checkout.html" title="class in cashier">Checkout</a></dt>
+<dd>
+<div class="block">Retrieves the next available ID from a database table using a provided SQL query.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#nextId(java.sql.Connection,java.lang.String)" class="member-name-link">nextId(Connection, String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Gets the next available ID from the specified table</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#nextId(java.sql.Connection,java.lang.String)" class="member-name-link">nextId(Connection, String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Returns the next identifier available in a database table.</div>
+</dd>
+<dt><a href="manager/MgrInventory.EditRow.html#node" class="member-name-link">node</a> - Variable in class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.html#nonNegativeInt(java.lang.String,java.lang.String)" class="member-name-link">nonNegativeInt(String, String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Gets the value of a field that requires a non-negative integer.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#nonNegativeInt(java.lang.String,java.lang.String)" class="member-name-link">nonNegativeInt(String, String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Parses and validates a non-negative whole number.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#nonNegativeMoney(java.lang.String,java.lang.String)" class="member-name-link">nonNegativeMoney(String, String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Gets the value of a field that requires a non-negative money value.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#nonNegativeMoney(java.lang.String,java.lang.String)" class="member-name-link">nonNegativeMoney(String, String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Parses and validates a non-negative monetary value.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#numberField()" class="member-name-link">numberField()</a> - Static method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Creates a pay input accepting up to seven integer digits and two decimal places.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#numberField()" class="member-name-link">numberField()</a> - Static method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Text field that only accepts non-negative numbers with up to 2 decimals.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:O">O</h2>
 <dl class="index">
+<dt><a href="manager/MgrInventory.html#onShowEmployees" class="member-name-link">onShowEmployees</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#onShowInventory" class="member-name-link">onShowInventory</a> - Variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Callback for opening the inventory screen.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#onShowReports" class="member-name-link">onShowReports</a> - Variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#onShowSeasonalMenu" class="member-name-link">onShowSeasonalMenu</a> - Variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Callback invoked by the seasonal-menu button.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#openConnection()" class="member-name-link">openConnection()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Opens a connection to the configured project database.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#optionGroup(javafx.scene.control.ToggleGroup,java.lang.String%5B%5D,java.lang.String)" class="member-name-link">optionGroup(ToggleGroup, String[], String)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Creates a group of mutually exclusive customization options.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#ORANGE" class="member-name-link">ORANGE</a> - Static variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#ORANGE" class="member-name-link">ORANGE</a> - Static variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.OrderItem.html#%3Cinit%3E(int,java.lang.String,java.math.BigDecimal,java.util.List,java.lang.String,java.lang.String)" class="member-name-link">OrderItem(int, String, BigDecimal, List, String, String)</a> - Constructor for class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
 <dd>
-<div class="block">Initializes a line item with its selected customizations.</div>
+<div class="block">Constructs a new OrderItem with specified customizations and pricing.</div>
 </dd>
+<dt><a href="manager/MgrInventory.EditRow.html#original" class="member-name-link">original</a> - Variable in class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:P">P</h2>
 <dl class="index">
+<dt><a href="manager/ReportPdfExporter.html#PAGE_LINES" class="member-name-link">PAGE_LINES</a> - Static variable in class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Line budget used for wrapped table headings, descriptions, and row content.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#parse(javafx.scene.control.TextField)" class="member-name-link">parse(TextField)</a> - Static method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal parse operation for this view.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#parsePay(java.lang.String)" class="member-name-link">parsePay(String)</a> - Static method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Parses pay and rounds it to two decimal places using half-up rounding.</div>
+</dd>
+<dt><a href="manager/MainBodyM.Employee.html#payLevel" class="member-name-link">payLevel</a> - Variable in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/MainBodyM.Employee.html#param-payLevel"><code>payLevel</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MainBodyM.Employee.html#payLevel()" class="member-name-link">payLevel()</a> - Method in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/MainBodyM.Employee.html#param-payLevel"><code>payLevel</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#PENCIL_ACTIVE" class="member-name-link">PENCIL_ACTIVE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#PENCIL_IDLE" class="member-name-link">PENCIL_IDLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#PENCIL_PATH" class="member-name-link">PENCIL_PATH</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#pencilButton" class="member-name-link">pencilButton</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#pencilIcon" class="member-name-link">pencilIcon</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#placeholder(java.lang.String)" class="member-name-link">placeholder(String)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Creates a message for an empty report table.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#positiveMoney(java.lang.String,java.lang.String)" class="member-name-link">positiveMoney(String, String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Gets the value of a field that requires a positive money value.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#positiveMoney(java.lang.String,java.lang.String)" class="member-name-link">positiveMoney(String, String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Parses and validates a strictly positive price.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#prettyName(java.lang.String)" class="member-name-link">prettyName(String)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Turns a column name like <code>units_sold</code> into a heading like <code>Units Sold</code>.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#PRICE_MOD_W" class="member-name-link">PRICE_MOD_W</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.html#priceField" class="member-name-link">priceField</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#priceField" class="member-name-link">priceField</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.EditRow.html#priceModField" class="member-name-link">priceModField</a> - Variable in class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#priceModifier" class="member-name-link">priceModifier</a> - Variable in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#PRIMARY_BUTTON" class="member-name-link">PRIMARY_BUTTON</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#PRIMARY_BUTTON_STYLE" class="member-name-link">PRIMARY_BUTTON_STYLE</a> - Static variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Style shared by the employee creation, save, and seasonal-menu buttons.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#PRIMARY_STYLE" class="member-name-link">PRIMARY_STYLE</a> - Static variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#PRIMARY_STYLE" class="member-name-link">PRIMARY_STYLE</a> - Static variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#primaryButtonStyle()" class="member-name-link">primaryButtonStyle()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Returns the shared style for primary report actions.</div>
+</dd>
+<dt><a href="manager/ReportPdfExporter.html#printable(java.lang.String)" class="member-name-link">printable(String)</a> - Static method in class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Replaces control characters with spaces and characters unsupported by Courier
+with question marks.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#product" class="member-name-link">product</a> - Variable in record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/ReportsView.ProductUsageRow.html#param-product"><code>product</code></a> record component.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#product()" class="member-name-link">product()</a> - Method in record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/ReportsView.ProductUsageRow.html#param-product"><code>product</code></a> record component.</div>
+</dd>
 <dt><a href="manager/ReportsView.Report.html#PRODUCT_USAGE" class="member-name-link">PRODUCT_USAGE</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#PRODUCT_USAGE_SQL" class="member-name-link">PRODUCT_USAGE_SQL</a> - Static variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#PRODUCTS_PER_CHART_ROW" class="member-name-link">PRODUCTS_PER_CHART_ROW</a> - Static variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#productUsage" class="member-name-link">productUsage</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#productUsageChart(java.util.List,double,double)" class="member-name-link">productUsageChart(List, double, double)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#%3Cinit%3E(java.lang.String,java.math.BigDecimal)" class="member-name-link">ProductUsageRow(String, BigDecimal)</a> - Constructor for record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">Creates an instance of a <code>ProductUsageRow</code> record class.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#publishedItems" class="member-name-link">publishedItems</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#publishedItems" class="member-name-link">publishedItems</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.html#publishMenuItem()" class="member-name-link">publishMenuItem()</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Publishes the created menu item to the menu table of the database</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#publishMenuItem()" class="member-name-link">publishMenuItem()</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Validates and publishes a seasonal menu item and recipe.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:Q">Q</h2>
 <dl class="index">
@@ -211,22 +935,135 @@ calculating customer costs.</div>
 </dl>
 <h2 class="title" id="I:R">R</h2>
 <dl class="index">
+<dt><a href="database/DatabaseConnection.html#readDotenv()" class="member-name-link">readDotenv()</a> - Static method in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>
+<div class="block">Reads a local .env without adding a runtime dependency to the desktop app.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#readToppings()" class="member-name-link">readToppings()</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Reads the supported customization toppings from inventory.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#refresh()" class="member-name-link">refresh()</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Refreshes the order display UI, updating the item list view, calculated totals, and button states.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#removeItemFromDatabase(java.sql.Connection,int)" class="member-name-link">removeItemFromDatabase(Connection, int)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">DELETE FROM inventory WHERE id = ?</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#removeRow(manager.MgrInventory.EditRow)" class="member-name-link">removeRow(MgrInventory.EditRow)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Removing only hides the row; the DELETE happens when changes are saved.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#renderEditRows()" class="member-name-link">renderEditRows()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal render edit rows operation for this view.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#renderViewRows()" class="member-name-link">renderViewRows()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal render view rows operation for this view.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#report" class="member-name-link">report</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.Report.html#%3Cinit%3E()" class="member-name-link">Report()</a> - Constructor for enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">ReportDefinition(String, String, String)</a> - Constructor for record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">Creates an instance of a <code>ReportDefinition</code> record class.</div>
+</dd>
+<dt><a href="manager/ReportPdfExporter.html" class="type-name-link" title="class in manager">ReportPdfExporter</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>
+<div class="block">Writes report tables to a PDF without needing JavaFX or a database connection.</div>
+</dd>
+<dt><a href="manager/ReportPdfExporter.html#%3Cinit%3E()" class="member-name-link">ReportPdfExporter()</a> - Constructor for class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Prevents instantiation of this utility class.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#reportReady" class="member-name-link">reportReady</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Whether report data has finished loading and can be exported.</div>
+</dd>
 <dt><a href="manager/ReportsView.html" class="type-name-link" title="class in manager">ReportsView</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
 <dd>
 <div class="block">A manager-facing report page.</div>
 </dd>
 <dt><a href="manager/ReportsView.html#%3Cinit%3E(manager.ReportsView.Report)" class="member-name-link">ReportsView(ReportsView.Report)</a> - Constructor for class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
 <dd>
-<div class="block">Initializes the selected manager report view.</div>
+<div class="block">Initializes the requested manager report.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html" class="type-name-link" title="class in manager">ReportsView.ProductUsageRow</a> - Record Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>
+<div class="block">One row of the product usage report.</div>
 </dd>
 <dt><a href="manager/ReportsView.Report.html" class="type-name-link" title="enum class in manager">ReportsView.Report</a> - Enum Class in <a href="manager/package-summary.html">manager</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html" class="type-name-link" title="class in manager">ReportsView.ReportDefinition</a> - Record Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>
+<div class="block">The name, description, and query for a table-based report.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#required(java.lang.String,java.lang.String)" class="member-name-link">required(String, String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Gets the value of a required field or throws an exception if the field is empty</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#required(java.lang.String,java.lang.String)" class="member-name-link">required(String, String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Returns a trimmed required value or raises a validation error.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#reset()" class="member-name-link">reset()</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Clears the menu workspace and restores its standard spacing.</div>
+</dd>
 <dt><a href="manager/ReportsView.Report.html#RESTOCK_HISTORY" class="member-name-link">RESTOCK_HISTORY</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.Report.html#RESTOCK_REPORT" class="member-name-link">RESTOCK_REPORT</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#restockHistory" class="member-name-link">restockHistory</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#restockReport" class="member-name-link">restockReport</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#ROW_HOVER_STYLE" class="member-name-link">ROW_HOVER_STYLE</a> - Static variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#ROW_HOVER_STYLE" class="member-name-link">ROW_HOVER_STYLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.html#ROW_STYLE" class="member-name-link">ROW_STYLE</a> - Static variable in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#ROW_STYLE" class="member-name-link">ROW_STYLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:S">S</h2>
 <dl class="index">
 <dt><a href="manager/ReportsView.Report.html#SALES_BY_ITEM" class="member-name-link">SALES_BY_ITEM</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#salesByItem" class="member-name-link">salesByItem</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#sameToppings(java.util.List,java.util.List)" class="member-name-link">sameToppings(List, List)</a> - Static method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Compares two lists of toppings to verify if they contain identical options.</div>
+</dd>
+<dt><a href="manager/MgrInventory.InventoryItem.html#sameValuesAs(manager.MgrInventory.InventoryItem)" class="member-name-link">sameValuesAs(MgrInventory.InventoryItem)</a> - Method in class manager.<a href="manager/MgrInventory.InventoryItem.html" title="class in manager">MgrInventory.InventoryItem</a></dt>
+<dd>
+<div class="block">Executes the internal same values as operation for this view.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#saveButton" class="member-name-link">saveButton</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#saveChanges()" class="member-name-link">saveChanges()</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Validates and persists inventory inserts, updates, and deletions.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#savePdf()" class="member-name-link">savePdf()</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Prompts for a PDF destination and snapshots the displayed columns, rows, and
+loaded report description before saving on a background thread.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#savingPdf" class="member-name-link">savingPdf</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Whether a background PDF export is in progress.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#scroll(javafx.scene.layout.Region)" class="member-name-link">scroll(Region)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Wraps content in the standard vertically scrolling pane.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#scrollPane" class="member-name-link">scrollPane</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="manager/SeasonalMenuView.html" class="type-name-link" title="class in manager">SeasonalMenuView</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
 <dd>
@@ -234,13 +1071,34 @@ calculating customer costs.</div>
 </dd>
 <dt><a href="manager/SeasonalMenuView.html#%3Cinit%3E(java.lang.Runnable)" class="member-name-link">SeasonalMenuView(Runnable)</a> - Constructor for class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
 <dd>
-<div class="block">Loads values from database while displaying a loading screen before switching
-to the data view.</div>
+<div class="block">Builds the seasonal-menu screen and loads available ingredients and published items.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.InventoryOption.html" class="type-name-link" title="class in manager">SeasonalMenuView.InventoryOption</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#SECONDARY_BUTTON" class="member-name-link">SECONDARY_BUTTON</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/MainBody.html#section(java.lang.String)" class="member-name-link">section(String)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Creates a styled section-heading label.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#section(java.lang.String)" class="member-name-link">section(String)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Creates a new <code>Label</code> as a section header</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#section(java.lang.String)" class="member-name-link">section(String)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Creates a styled heading for a form section.</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html#select(javafx.scene.control.Button)" class="member-name-link">select(Button)</a> - Method in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>
+<div class="block">Changes the style of the selected button.</div>
 </dd>
 <dt><a href="manager/SideBarMgr.html#selectAddMenuItem()" class="member-name-link">selectAddMenuItem()</a> - Method in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
 <dd>
 <div class="block">Highlights the add-menu-item navigation item.</div>
 </dd>
+<dt><a href="manager/SideBarMgr.html#SELECTED" class="member-name-link">SELECTED</a> - Static variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="manager/SideBarMgr.html#selectEmployees()" class="member-name-link">selectEmployees()</a> - Method in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
 <dd>
 <div class="block">Highlights the Employees navigation item.</div>
@@ -251,29 +1109,128 @@ to the data view.</div>
 </dd>
 <dt><a href="manager/SideBarMgr.html#selectMenuItems()" class="member-name-link">selectMenuItems()</a> - Method in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
 <dd>
-<div class="block">Highlights the seasonal menu navigation item.</div>
+<div class="block">Highlights the seasonal-menu navigation item.</div>
 </dd>
 <dt><a href="manager/SideBarMgr.html#selectReport(manager.ReportsView.Report)" class="member-name-link">selectReport(ReportsView.Report)</a> - Method in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
-<dd>
-<div class="block">Highlights the navigation item for the active report.</div>
-</dd>
-<dt><a href="cashier/SideBar.html" class="type-name-link" title="class in cashier">SideBar</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#setEditing(boolean)" class="member-name-link">setEditing(boolean)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal set editing operation for this view.</div>
+</dd>
+<dt><a href="manager/AddMenuItem.html#setStatus(java.lang.String,boolean)" class="member-name-link">setStatus(String, boolean)</a> - Method in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>
+<div class="block">Updates the status label message and color depending on whether it is an error or success message.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.html#setStatus(java.lang.String,boolean)" class="member-name-link">setStatus(String, boolean)</a> - Method in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>
+<div class="block">Updates the status text and applies error or success styling.</div>
+</dd>
+<dt><a href="database/DatabaseConnection.html#setting(java.lang.String,java.lang.String,java.util.Map)" class="member-name-link">setting(String, String, Map)</a> - Static method in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>
+<div class="block">Executes the internal setting operation for this view.</div>
+</dd>
+<dt><a href="manager/ManagerView.html#showAddMenuItem()" class="member-name-link">showAddMenuItem()</a> - Method in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>
+<div class="block">Replaces the content pane with the menu-item publishing view.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#showCategories()" class="member-name-link">showCategories()</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Executes the internal show categories operation for this view.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#showDatabaseError(java.lang.String,java.lang.Exception)" class="member-name-link">showDatabaseError(String, Exception)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Executes the internal show database error operation for this view.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#showEmployeeForm(manager.MainBodyM.Employee)" class="member-name-link">showEmployeeForm(MainBodyM.Employee)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Displays a form for creating or editing an employee.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#showEmployees()" class="member-name-link">showEmployees()</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Displays the employee list, creation action, and seasonal-menu navigation,
+then starts loading employee records from the database.</div>
+</dd>
+<dt><a href="manager/ManagerView.html#showEmployees()" class="member-name-link">showEmployees()</a> - Method in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>
+<div class="block">Replaces the content pane with the employee-management view.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#showError(java.lang.String)" class="member-name-link">showError(String)</a> - Static method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Displays an employee-management error dialog and waits for dismissal.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#showError(java.lang.String,java.lang.String)" class="member-name-link">showError(String, String)</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Displays an error alert dialog with a specific header and error detail message.</div>
+</dd>
+<dt><a href="manager/ManagerView.html#showInventory()" class="member-name-link">showInventory()</a> - Method in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>
+<div class="block">Replaces the content pane with the inventory-management view.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#showItems(java.lang.String,java.lang.String)" class="member-name-link">showItems(String, String)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Executes the internal show items operation for this view.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#showProductUsage(long,java.util.List,java.time.LocalDate,java.time.LocalDate,javafx.scene.layout.VBox)" class="member-name-link">showProductUsage(long, List, LocalDate, LocalDate, VBox)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Renders product-usage results in the report table and chart.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#showProductUsageCharts(java.util.List,javafx.scene.layout.VBox)" class="member-name-link">showProductUsageCharts(List, VBox)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Renders product bars in fixed-size rows so no horizontal chart scrolling is needed.</div>
+</dd>
+<dt><a href="manager/ManagerView.html#showReport(manager.ReportsView.Report)" class="member-name-link">showReport(ReportsView.Report)</a> - Method in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>
+<div class="block">Replaces the content pane with the selected reporting view.</div>
+</dd>
+<dt><a href="manager/ManagerView.html#showSeasonalMenu()" class="member-name-link">showSeasonalMenu()</a> - Method in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>
+<div class="block">Opens seasonal-menu management with a callback to return to employees
+and selects the menu-items entry in the sidebar.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#showStandardReport(long,java.util.List,java.util.List,manager.ReportsView.ReportDefinition,java.time.LocalDate,java.time.LocalDate)" class="member-name-link">showStandardReport(long, List, List, ReportsView.ReportDefinition, LocalDate, LocalDate)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Makes one table column per query column and fills in the rows.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#sideBar" class="member-name-link">sideBar</a> - Variable in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ManagerView.html#sideBar" class="member-name-link">sideBar</a> - Variable in class manager.<a href="manager/ManagerView.html" title="class in manager">ManagerView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html" class="type-name-link" title="class in cashier">SideBar</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
+<dd>
+<div class="block">Sidebar component for the cashier screen managing current order items, 
+pricing calculations, employee assignment, and order submission.</div>
+</dd>
 <dt><a href="cashier/SideBar.html#%3Cinit%3E()" class="member-name-link">SideBar()</a> - Constructor for class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
 <dd>
-<div class="block">Initializes the order sidebar, employee selector, and checkout controls.</div>
+<div class="block">Initializes the SideBar component and adds the GUI elements.</div>
+</dd>
+<dt><a href="cashier/SideBar.EmployeeChoice.html" class="type-name-link" title="class in cashier">SideBar.EmployeeChoice</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
+<dd>
+<div class="block">Represents a cashier employee choice for order attribution.</div>
 </dd>
 <dt><a href="cashier/SideBar.OrderItem.html" class="type-name-link" title="class in cashier">SideBar.OrderItem</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="cashier/SideBar.Topping.html" class="type-name-link" title="class in cashier">SideBar.Topping</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="manager/SideBarMgr.html" class="type-name-link" title="class in manager">SideBarMgr</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
 <dd>
-<div class="block">Persistent left navigation for the manager workspace.</div>
+<div class="block">Items in the current order, including customized options, quantity, and toppings.</div>
 </dd>
-<dt><a href="manager/SideBarMgr.html#%3Cinit%3E(java.lang.Runnable,java.lang.Runnable,java.lang.Runnable,java.lang.Runnable,java.util.function.Consumer)" class="member-name-link">SideBarMgr(Runnable, Runnable, Runnable, Runnable, Consumer)</a> - Constructor for class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dt><a href="cashier/SideBar.TipButton.html" class="type-name-link" title="class in cashier">SideBar.TipButton</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
 <dd>
-<div class="block">Initializes manager navigation and report-selection actions.</div>
+<div class="block">Custom button class representing a specific tip percentage option.</div>
+</dd>
+<dt><a href="cashier/SideBar.Topping.html" class="type-name-link" title="class in cashier">SideBar.Topping</a> - Class in <a href="cashier/package-summary.html">cashier</a></dt>
+<dd>
+<div class="block">Represents a topping option that can be added to an order item with a surcharge.</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html" class="type-name-link" title="class in manager">SideBarMgr</a> - Class in <a href="manager/package-summary.html">manager</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#%3Cinit%3E(java.lang.Runnable,java.lang.Runnable,java.lang.Runnable,java.lang.Runnable,java.util.function.Consumer)" class="member-name-link">SideBarMgr(Runnable, Runnable, Runnable, Runnable, Consumer)</a> - Constructor for class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#sql" class="member-name-link">sql</a> - Variable in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/ReportsView.ReportDefinition.html#param-sql"><code>sql</code></a> record component.</div>
+</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#sql()" class="member-name-link">sql()</a> - Method in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/ReportsView.ReportDefinition.html#param-sql"><code>sql</code></a> record component.</div>
 </dd>
 <dt><a href="cashier/CashierMain.html#start(javafx.stage.Stage)" class="member-name-link">start(Stage)</a> - Method in class cashier.<a href="cashier/CashierMain.html" title="class in cashier">CashierMain</a></dt>
 <dd>
@@ -283,35 +1240,171 @@ to the data view.</div>
 <dd>
 <div class="block">Initializes and displays the application stage.</div>
 </dd>
+<dt><a href="manager/AddMenuItem.html#status" class="member-name-link">status</a> - Variable in class manager.<a href="manager/AddMenuItem.html" title="class in manager">AddMenuItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportsView.html#status" class="member-name-link">status</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SeasonalMenuView.html#status" class="member-name-link">status</a> - Variable in class manager.<a href="manager/SeasonalMenuView.html" title="class in manager">SeasonalMenuView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#STATUS_ERROR" class="member-name-link">STATUS_ERROR</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#statusLabel" class="member-name-link">statusLabel</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="database/DatabaseConnection.html#stripMatchingQuotes(java.lang.String)" class="member-name-link">stripMatchingQuotes(String)</a> - Static method in class database.<a href="database/DatabaseConnection.html" title="class in database">DatabaseConnection</a></dt>
+<dd>
+<div class="block">Executes the internal strip matching quotes operation for this view.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#styleToggle(javafx.scene.control.ToggleButton)" class="member-name-link">styleToggle(ToggleButton)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Updates a customization button to reflect its selection state.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#submitOrder()" class="member-name-link">submitOrder()</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Opens the tip selection dialog allowing the user to select preset tip percentages or enter a custom tip amount.</div>
+</dd>
 <dt><a href="cashier/Checkout.html#submitOrder(int,java.util.List,java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal)" class="member-name-link">submitOrder(int, List, BigDecimal, BigDecimal, BigDecimal)</a> - Static method in class cashier.<a href="cashier/Checkout.html" title="class in cashier">Checkout</a></dt>
 <dd>
-<div class="block">Prompts for a tip and submits the current order after validation.</div>
+<div class="block">Submits a customer order along with its items, quantities, toppings, and pricing details into the database.</div>
 </dd>
+<dt><a href="manager/ReportsView.html#subtitle(java.lang.String)" class="member-name-link">subtitle(String)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Creates a styled report subtitle label.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#subtotal()" class="member-name-link">subtotal()</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Calculates the cumulative subtotal of all items in the current order.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#subtotalValue" class="member-name-link">subtotalValue</a> - Variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.Topping.html#surcharge" class="member-name-link">surcharge</a> - Variable in class cashier.<a href="cashier/SideBar.Topping.html" title="class in cashier">SideBar.Topping</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#svg(java.lang.String,java.lang.String,double)" class="member-name-link">svg(String, String, double)</a> - Static method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Creates and scales an SVG icon with the requested color.</div>
+</dd>
+<dt><a href="cashier/MainBody.Customization.html#sweetness" class="member-name-link">sweetness</a> - Variable in class cashier.<a href="cashier/MainBody.Customization.html" title="class in cashier">MainBody.Customization</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.OrderItem.html#sweetness" class="member-name-link">sweetness</a> - Variable in class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:T">T</h2>
 <dl class="index">
+<dt><a href="manager/ReportsView.html#table" class="member-name-link">table</a> - Variable in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#TABLE" class="member-name-link">TABLE</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">The one table this page reads and writes.</div>
+</dd>
+<dt><a href="manager/ReportPdfExporter.html#TABLE_CHARACTERS" class="member-name-link">TABLE_CHARACTERS</a> - Static variable in class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Character width used to wrap descriptions and divide table columns.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#tableBody" class="member-name-link">tableBody</a> - Variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/ReportPdfExporter.html#tableLines(java.util.List,int)" class="member-name-link">tableLines(List, int)</a> - Static method in class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Wraps cells into equally padded columns separated by vertical bars.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#TAX_RATE" class="member-name-link">TAX_RATE</a> - Static variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#taxValue" class="member-name-link">taxValue</a> - Variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#text(java.lang.String,java.lang.String)" class="member-name-link">text(String, String)</a> - Static method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">Creates a styled text label for an inventory cell.</div>
+</dd>
+<dt><a href="cashier/MainBody.html#threeColumns()" class="member-name-link">threeColumns()</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Creates the responsive three-column grid used for menu cards.</div>
+</dd>
+<dt><a href="cashier/SideBar.TipButton.html#%3Cinit%3E(double)" class="member-name-link">TipButton(double)</a> - Constructor for class cashier.<a href="cashier/SideBar.TipButton.html" title="class in cashier">SideBar.TipButton</a></dt>
+<dd>
+<div class="block">Constructs a TipButton with a given tip percentage.</div>
+</dd>
+<dt><a href="cashier/SideBar.TipButton.html#tipPercentage" class="member-name-link">tipPercentage</a> - Variable in class cashier.<a href="cashier/SideBar.TipButton.html" title="class in cashier">SideBar.TipButton</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/MainBody.html#title(java.lang.String)" class="member-name-link">title(String)</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Creates a consistently styled page-title label.</div>
+</dd>
+<dt><a href="manager/ReportsView.html#title(java.lang.String)" class="member-name-link">title(String)</a> - Method in class manager.<a href="manager/ReportsView.html" title="class in manager">ReportsView</a></dt>
+<dd>
+<div class="block">Creates a styled report title label.</div>
+</dd>
+<dt><a href="manager/MgrInventory.EditRow.html#toItem()" class="member-name-link">toItem()</a> - Method in class manager.<a href="manager/MgrInventory.EditRow.html" title="class in manager">MgrInventory.EditRow</a></dt>
+<dd>
+<div class="block">Converts the editable row values into an inventory item.</div>
+</dd>
 <dt><a href="manager/ReportsView.Report.html#TOP_MENU_ITEMS" class="member-name-link">TOP_MENU_ITEMS</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/MainBody.html#topBar()" class="member-name-link">topBar()</a> - Method in class cashier.<a href="cashier/MainBody.html" title="class in cashier">MainBody</a></dt>
+<dd>
+<div class="block">Builds the cashier header with search and navigation controls.</div>
+</dd>
+<dt><a href="manager/SideBarMgr.html#topMenuItems" class="member-name-link">topMenuItems</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.Topping.html#%3Cinit%3E(int,java.lang.String,java.math.BigDecimal)" class="member-name-link">Topping(int, String, BigDecimal)</a> - Constructor for class cashier.<a href="cashier/SideBar.Topping.html" title="class in cashier">SideBar.Topping</a></dt>
 <dd>
-<div class="block">Initializes an immutable topping selection and its surcharge.</div>
+<div class="block">Constructs a new Topping option.</div>
 </dd>
+<dt><a href="cashier/MainBody.Customization.html#toppings" class="member-name-link">toppings</a> - Variable in class cashier.<a href="cashier/MainBody.Customization.html" title="class in cashier">MainBody.Customization</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="cashier/SideBar.OrderItem.html#toppings" class="member-name-link">toppings</a> - Variable in class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.EmployeeChoice.html#toString()" class="member-name-link">toString()</a> - Method in class cashier.<a href="cashier/SideBar.EmployeeChoice.html" title="class in cashier">SideBar.EmployeeChoice</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/AddMenuItem.InventoryOption.html#toString()" class="member-name-link">toString()</a> - Method in class manager.<a href="manager/AddMenuItem.InventoryOption.html" title="class in manager">AddMenuItem.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MainBodyM.Employee.html#toString()" class="member-name-link">toString()</a> - Method in record class manager.<a href="manager/MainBodyM.Employee.html" title="class in manager">MainBodyM.Employee</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#toString()" class="member-name-link">toString()</a> - Method in record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
+<dt><a href="manager/ReportsView.ReportDefinition.html#toString()" class="member-name-link">toString()</a> - Method in record class manager.<a href="manager/ReportsView.ReportDefinition.html" title="class in manager">ReportsView.ReportDefinition</a></dt>
+<dd>
+<div class="block">Returns a string representation of this record class.</div>
+</dd>
+<dt><a href="manager/SeasonalMenuView.InventoryOption.html#toString()" class="member-name-link">toString()</a> - Method in class manager.<a href="manager/SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="cashier/SideBar.html#totalRow(java.lang.String,javafx.scene.control.Label,boolean)" class="member-name-link">totalRow(String, Label, boolean)</a> - Method in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>
+<div class="block">Creates an HBox layout row for the subtotal, tax, and total.</div>
+</dd>
+<dt><a href="cashier/SideBar.html#totalValue" class="member-name-link">totalValue</a> - Variable in class cashier.<a href="cashier/SideBar.html" title="class in cashier">SideBar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/MgrInventory.html#TRASH_PATH" class="member-name-link">TRASH_PATH</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:U">U</h2>
 <dl class="index">
 <dt><a href="cashier/SideBar.OrderItem.html#unitPrice()" class="member-name-link">unitPrice()</a> - Method in class cashier.<a href="cashier/SideBar.OrderItem.html" title="class in cashier">SideBar.OrderItem</a></dt>
 <dd>
-<div class="block">Calculates the base price plus all selected topping surcharges.</div>
+<div class="block">Calculates the unit price of the item including base price and all topping surcharges.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#unitsUsed" class="member-name-link">unitsUsed</a> - Variable in record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">The field for the <a href="./manager/ReportsView.ProductUsageRow.html#param-unitsUsed"><code>unitsUsed</code></a> record component.</div>
+</dd>
+<dt><a href="manager/ReportsView.ProductUsageRow.html#unitsUsed()" class="member-name-link">unitsUsed()</a> - Method in record class manager.<a href="manager/ReportsView.ProductUsageRow.html" title="class in manager">ReportsView.ProductUsageRow</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="./manager/ReportsView.ProductUsageRow.html#param-unitsUsed"><code>unitsUsed</code></a> record component.</div>
+</dd>
+<dt><a href="manager/MainBodyM.html#updateEmployee(int,java.lang.String,java.math.BigDecimal,java.lang.String)" class="member-name-link">updateEmployee(int, String, BigDecimal, String)</a> - Method in class manager.<a href="manager/MainBodyM.html" title="class in manager">MainBodyM</a></dt>
+<dd>
+<div class="block">Updates an existing employee's name, pay, and contact information.</div>
+</dd>
+<dt><a href="manager/MgrInventory.html#updateItemInDatabase(java.sql.Connection,int,java.lang.String,double,double)" class="member-name-link">updateItemInDatabase(Connection, int, String, double, double)</a> - Method in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>
+<div class="block">UPDATE inventory SET name = ?, amount = ?, price_modifier = ? WHERE id = ?</div>
 </dd>
 </dl>
 <h2 class="title" id="I:V">V</h2>
 <dl class="index">
+<dt><a href="manager/MgrInventory.html#VALUE_TEXT" class="member-name-link">VALUE_TEXT</a> - Static variable in class manager.<a href="manager/MgrInventory.html" title="class in manager">MgrInventory</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="manager/ReportsView.Report.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -322,7 +1415,25 @@ to the data view.</div>
 the order they are declared.</div>
 </dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a></main>
+<h2 class="title" id="I:W">W</h2>
+<dl class="index">
+<dt><a href="manager/ReportPdfExporter.html#wrap(java.lang.String,int)" class="member-name-link">wrap(String, int)</a> - Static method in class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Converts text to printable characters and splits it into fixed-width chunks.</div>
+</dd>
+<dt><a href="manager/ReportPdfExporter.html#writeLine(org.apache.pdfbox.pdmodel.PDPageContentStream,java.lang.String)" class="member-name-link">writeLine(PDPageContentStream, String)</a> - Static method in class manager.<a href="manager/ReportPdfExporter.html" title="class in manager">ReportPdfExporter</a></dt>
+<dd>
+<div class="block">Writes sanitized text and advances to the next line of an active text block.</div>
+</dd>
+</dl>
+<h2 class="title" id="I:X">X</h2>
+<dl class="index">
+<dt><a href="manager/ReportsView.Report.html#X_REPORT" class="member-name-link">X_REPORT</a> - Enum constant in enum class manager.<a href="manager/ReportsView.Report.html" title="enum class in manager">ReportsView.Report</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="manager/SideBarMgr.html#xReport" class="member-name-link">xReport</a> - Variable in class manager.<a href="manager/SideBarMgr.html" title="class in manager">SideBarMgr</a></dt>
+<dd>&nbsp;</dd>
+</dl>
+<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:Q">Q</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:X">X</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes&nbsp;and&nbsp;Interfaces</a><span class="vertical-separator">|</span><a href="allpackages-index.html">All&nbsp;Packages</a><span class="vertical-separator">|</span><a href="constant-values.html">Constant&nbsp;Field&nbsp;Values</a></main>
 </div>
 </body>
 </html>

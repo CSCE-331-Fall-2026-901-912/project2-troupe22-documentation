@@ -53,13 +53,47 @@ loadScripts(document, 'script');</script>
 <div class="toc-header">Contents&nbsp;<input type="text" class="filter-input" disabled placeholder="Filter contents (type .)" aria-label="Filter table of contents" autocomplete="off" spellcheck="false"><input type="reset" class="reset-filter" disabled tabindex="-1" value="Reset"></div>
 <ol class="toc-list" tabindex="-1">
 <li><a href="#" tabindex="0">Description</a></li>
+<li><a href="#nested-class-summary" tabindex="0">Nested Class Summary</a></li>
 <li><a href="#property-summary" tabindex="0">Property Summary</a></li>
 <li><a href="#field-summary" tabindex="0">Field Summary</a></li>
 <li><a href="#constructor-summary" tabindex="0">Constructor Summary</a></li>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
+<li><a href="#field-detail" tabindex="0">Field Details</a>
+<ol class="toc-list">
+<li><a href="#FIELD_STYLE" tabindex="0">FIELD_STYLE</a></li>
+<li><a href="#PRIMARY_STYLE" tabindex="0">PRIMARY_STYLE</a></li>
+<li><a href="#nameField" tabindex="0">nameField</a></li>
+<li><a href="#priceField" tabindex="0">priceField</a></li>
+<li><a href="#inventoryNameField" tabindex="0">inventoryNameField</a></li>
+<li><a href="#inventoryAmountField" tabindex="0">inventoryAmountField</a></li>
+<li><a href="#inventoryModifierField" tabindex="0">inventoryModifierField</a></li>
+<li><a href="#ingredients" tabindex="0">ingredients</a></li>
+<li><a href="#status" tabindex="0">status</a></li>
+<li><a href="#publishedItems" tabindex="0">publishedItems</a></li>
+</ol>
+</li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
 <li><a href="#%3Cinit%3E(java.lang.Runnable)" tabindex="0">SeasonalMenuView(Runnable)</a></li>
+</ol>
+</li>
+<li><a href="#method-detail" tabindex="0">Method Details</a>
+<ol class="toc-list">
+<li><a href="#field(java.lang.String)" tabindex="0">field(String)</a></li>
+<li><a href="#section(java.lang.String)" tabindex="0">section(String)</a></li>
+<li><a href="#labelled(java.lang.String,javafx.scene.control.TextField)" tabindex="0">labelled(String, TextField)</a></li>
+<li><a href="#loadAutumnExample()" tabindex="0">loadAutumnExample()</a></li>
+<li><a href="#loadInventory()" tabindex="0">loadInventory()</a></li>
+<li><a href="#addInventoryItem()" tabindex="0">addInventoryItem()</a></li>
+<li><a href="#publishMenuItem()" tabindex="0">publishMenuItem()</a></li>
+<li><a href="#loadPublishedItems()" tabindex="0">loadPublishedItems()</a></li>
+<li><a href="#nextId(java.sql.Connection,java.lang.String)" tabindex="0">nextId(Connection, String)</a></li>
+<li><a href="#exists(java.sql.Connection,java.lang.String,java.lang.String)" tabindex="0">exists(Connection, String, String)</a></li>
+<li><a href="#required(java.lang.String,java.lang.String)" tabindex="0">required(String, String)</a></li>
+<li><a href="#positiveMoney(java.lang.String,java.lang.String)" tabindex="0">positiveMoney(String, String)</a></li>
+<li><a href="#nonNegativeMoney(java.lang.String,java.lang.String)" tabindex="0">nonNegativeMoney(String, String)</a></li>
+<li><a href="#nonNegativeInt(java.lang.String,java.lang.String)" tabindex="0">nonNegativeInt(String, String)</a></li>
+<li><a href="#setStatus(java.lang.String,boolean)" tabindex="0">setStatus(String, boolean)</a></li>
 </ol>
 </li>
 </ol>
@@ -96,6 +130,21 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>private static final class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="SeasonalMenuView.InventoryOption.html" class="type-name-link" title="class in manager">SeasonalMenuView.InventoryOption</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+</div>
+</section>
+</li>
 <!-- =========== PROPERTY SUMMARY =========== -->
 <li>
 <section class="property-summary" id="property-summary">
@@ -118,6 +167,42 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
+<div class="caption"><span>Fields</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color"><code><a href="#FIELD_STYLE" class="member-name-link">FIELD_STYLE</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final javafx.scene.control.ListView<wbr>&lt;<a href="SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#ingredients" class="member-name-link">ingredients</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.TextField</code></div>
+<div class="col-second even-row-color"><code><a href="#inventoryAmountField" class="member-name-link">inventoryAmountField</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final javafx.scene.control.TextField</code></div>
+<div class="col-second odd-row-color"><code><a href="#inventoryModifierField" class="member-name-link">inventoryModifierField</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.TextField</code></div>
+<div class="col-second even-row-color"><code><a href="#inventoryNameField" class="member-name-link">inventoryNameField</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final javafx.scene.control.TextField</code></div>
+<div class="col-second odd-row-color"><code><a href="#nameField" class="member-name-link">nameField</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.control.TextField</code></div>
+<div class="col-second even-row-color"><code><a href="#priceField" class="member-name-link">priceField</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private static final <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#PRIMARY_STYLE" class="member-name-link">PRIMARY_STYLE</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>private final javafx.scene.layout.VBox</code></div>
+<div class="col-second even-row-color"><code><a href="#publishedItems" class="member-name-link">publishedItems</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>private final javafx.scene.control.Label</code></div>
+<div class="col-second odd-row-color"><code><a href="#status" class="member-name-link">status</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+</div>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-javafx.scene.layout.Region">Fields inherited from class&nbsp;javafx.scene.layout.Region</h3>
 <code>USE_COMPUTED_SIZE, USE_PREF_SIZE</code></div>
@@ -136,8 +221,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Runnable)" class="member-name-link">SeasonalMenuView</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;onBack)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Loads values from database while displaying a loading screen before switching
-to the data view.</div>
+<div class="block">Builds the seasonal-menu screen and loads available ingredients and published items.</div>
 </div>
 </div>
 </section>
@@ -146,6 +230,100 @@ to the data view.</div>
 <li>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
+<div id="method-summary-table">
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Method</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addInventoryItem()" class="member-name-link">addInventoryItem</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Validates and saves a new inventory ingredient.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#exists(java.sql.Connection,java.lang.String,java.lang.String)" class="member-name-link">exists</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html" title="class or interface in java.sql" class="external-link">Connection</a>&nbsp;conn,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;table,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Checks whether a case-insensitive name already exists in a table.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.control.TextField</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#field(java.lang.String)" class="member-name-link">field</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;prompt)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a consistently styled text field with the supplied prompt.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.layout.VBox</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#labelled(java.lang.String,javafx.scene.control.TextField)" class="member-name-link">labelled</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+ javafx.scene.control.TextField&nbsp;field)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Groups an input field with its label.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadAutumnExample()" class="member-name-link">loadAutumnExample</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Prepares a concrete new, unsold seasonal item without writing to the database.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadInventory()" class="member-name-link">loadInventory</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Loads inventory ingredients into the recipe selector.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadPublishedItems()" class="member-name-link">loadPublishedItems</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Loads and displays published seasonal menu items.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nextId(java.sql.Connection,java.lang.String)" class="member-name-link">nextId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html" title="class or interface in java.sql" class="external-link">Connection</a>&nbsp;conn,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;table)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the next identifier available in a database table.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nonNegativeInt(java.lang.String,java.lang.String)" class="member-name-link">nonNegativeInt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Parses and validates a non-negative whole number.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#nonNegativeMoney(java.lang.String,java.lang.String)" class="member-name-link">nonNegativeMoney</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Parses and validates a non-negative monetary value.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#positiveMoney(java.lang.String,java.lang.String)" class="member-name-link">positiveMoney</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Parses and validates a strictly positive price.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#publishMenuItem()" class="member-name-link">publishMenuItem</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Validates and publishes a seasonal menu item and recipe.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#required(java.lang.String,java.lang.String)" class="member-name-link">required</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns a trimmed required value or raises a validation error.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private javafx.scene.control.Label</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#section(java.lang.String)" class="member-name-link">section</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a styled heading for a form section.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>private void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setStatus(java.lang.String,boolean)" class="member-name-link">setStatus</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ boolean&nbsp;error)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Updates the status text and applies error or success styling.</div>
+</div>
+</div>
+</div>
+</div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-javafx.scene.layout.VBox">Methods inherited from class&nbsp;javafx.scene.layout.VBox</h3>
 <code>alignmentProperty, clearConstraints, computeMinHeight, computeMinWidth, computePrefHeight, computePrefWidth, fillWidthProperty, getAlignment, getClassCssMetaData, getContentBias, getCssMetaData, getMargin, getSpacing, getVgrow, isFillWidth, layoutChildren, requestLayout, setAlignment, setFillWidth, setMargin, setSpacing, setVgrow, spacingProperty</code></div>
@@ -173,6 +351,110 @@ to the data view.</div>
 </section>
 <section class="details">
 <ul class="details-list">
+<!-- ============ FIELD DETAIL =========== -->
+<li>
+<section class="field-details" id="field-detail">
+<h2>Field Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="FIELD_STYLE">
+<h3>FIELD_STYLE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">FIELD_STYLE</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#manager.SeasonalMenuView.FIELD_STYLE">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="PRIMARY_STYLE">
+<h3>PRIMARY_STYLE</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private static final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">PRIMARY_STYLE</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="../constant-values.html#manager.SeasonalMenuView.PRIMARY_STYLE">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="nameField">
+<h3>nameField</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.TextField</span>&nbsp;<span class="element-name">nameField</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="priceField">
+<h3>priceField</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.TextField</span>&nbsp;<span class="element-name">priceField</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="inventoryNameField">
+<h3>inventoryNameField</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.TextField</span>&nbsp;<span class="element-name">inventoryNameField</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="inventoryAmountField">
+<h3>inventoryAmountField</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.TextField</span>&nbsp;<span class="element-name">inventoryAmountField</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="inventoryModifierField">
+<h3>inventoryModifierField</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.TextField</span>&nbsp;<span class="element-name">inventoryModifierField</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="ingredients">
+<h3>ingredients</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.ListView&lt;<a href="SeasonalMenuView.InventoryOption.html" title="class in manager">SeasonalMenuView.InventoryOption</a>&gt;</span>&nbsp;<span class="element-name">ingredients</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="status">
+<h3>status</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">status</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="publishedItems">
+<h3>publishedItems</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private final</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">publishedItems</span></div>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li>
 <section class="constructor-details" id="constructor-detail">
@@ -183,12 +465,173 @@ to the data view.</div>
 <h3>SeasonalMenuView</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">SeasonalMenuView</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;onBack)</span></div>
-<div class="block">Loads values from database while displaying a loading screen before switching
-to the data view.</div>
+<div class="block">Builds the seasonal-menu screen and loads available ingredients and published items.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>onBack</code> - function that runs when the user clicks the back button</dd>
+<dd><code>onBack</code> - action invoked when the Back button is selected</dd>
 </dl>
+</div>
+</section>
+</li>
+</ul>
+</section>
+</li>
+<!-- ============ METHOD DETAIL ========== -->
+<li>
+<section class="method-details" id="method-detail">
+<h2>Method Details</h2>
+<ul class="member-list">
+<li>
+<section class="detail" id="field(java.lang.String)">
+<h3>field</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.TextField</span>&nbsp;<span class="element-name">field</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;prompt)</span></div>
+<div class="block">Creates a consistently styled text field with the supplied prompt.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="section(java.lang.String)">
+<h3>section</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.control.Label</span>&nbsp;<span class="element-name">section</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text)</span></div>
+<div class="block">Creates a styled heading for a form section.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="labelled(java.lang.String,javafx.scene.control.TextField)">
+<h3>labelled</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">javafx.scene.layout.VBox</span>&nbsp;<span class="element-name">labelled</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;text,
+ javafx.scene.control.TextField&nbsp;field)</span></div>
+<div class="block">Groups an input field with its label.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadAutumnExample()">
+<h3>loadAutumnExample</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadAutumnExample</span>()</div>
+<div class="block">Prepares a concrete new, unsold seasonal item without writing to the database.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadInventory()">
+<h3>loadInventory</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadInventory</span>()</div>
+<div class="block">Loads inventory ingredients into the recipe selector.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="addInventoryItem()">
+<h3>addInventoryItem</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addInventoryItem</span>()</div>
+<div class="block">Validates and saves a new inventory ingredient.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="publishMenuItem()">
+<h3>publishMenuItem</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">publishMenuItem</span>()</div>
+<div class="block">Validates and publishes a seasonal menu item and recipe.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="loadPublishedItems()">
+<h3>loadPublishedItems</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadPublishedItems</span>()</div>
+<div class="block">Loads and displays published seasonal menu items.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="nextId(java.sql.Connection,java.lang.String)">
+<h3>nextId</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">nextId</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html" title="class or interface in java.sql" class="external-link">Connection</a>&nbsp;conn,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;table)</span>
+            throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Returns the next identifier available in a database table.</div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="exists(java.sql.Connection,java.lang.String,java.lang.String)">
+<h3>exists</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">exists</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html" title="class or interface in java.sql" class="external-link">Connection</a>&nbsp;conn,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;table,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span>
+                throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Checks whether a case-insensitive name already exists in a table.</div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="required(java.lang.String,java.lang.String)">
+<h3>required</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">required</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</span></div>
+<div class="block">Returns a trimmed required value or raises a validation error.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="positiveMoney(java.lang.String,java.lang.String)">
+<h3>positiveMoney</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name">positiveMoney</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</span></div>
+<div class="block">Parses and validates a strictly positive price.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="nonNegativeMoney(java.lang.String,java.lang.String)">
+<h3>nonNegativeMoney</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html" title="class or interface in java.math" class="external-link">BigDecimal</a></span>&nbsp;<span class="element-name">nonNegativeMoney</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</span></div>
+<div class="block">Parses and validates a non-negative monetary value.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="nonNegativeInt(java.lang.String,java.lang.String)">
+<h3>nonNegativeInt</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">nonNegativeInt</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;field)</span></div>
+<div class="block">Parses and validates a non-negative whole number.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="setStatus(java.lang.String,boolean)">
+<h3>setStatus</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">private</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setStatus</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ boolean&nbsp;error)</span></div>
+<div class="block">Updates the status text and applies error or success styling.</div>
 </div>
 </section>
 </li>
